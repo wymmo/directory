@@ -16,38 +16,40 @@ pub enum DirectoryError {
   YamlDeserialization,
 }
 
-fn get_file_stem(file: &File) -> Result<String, DirectoryError> {
-  Ok(
-    file
-      .path()
-      .file_stem()
-      .ok_or(DirectoryError::CouldNotReadFile)?
-      .to_string_lossy()
-      .to_string(),
-  )
+fn is_yaml(file: &File) -> bool {
+  file
+    .path()
+    .extension()
+    .and_then(|ext| ext.to_str())
+    .map(|ext| ext == "yaml" || ext == "yml")
+    .unwrap_or(false)
 }
 
 pub fn load_directory() -> Result<Directory, DirectoryError> {
   let tags_dir = DIRECTORY_FILES.get_dir("tags").ok_or(DirectoryError::TagsDirNotFound)?;
   let mut tags = HashMap::new();
   for tag_file in tags_dir.files() {
-    let key = get_file_stem(tag_file)?;
+    if !is_yaml(tag_file) {
+      continue;
+    }
     let yaml = tag_file.contents_utf8().ok_or(DirectoryError::CouldNotReadFile)?;
     let tag: Tag = serde_yaml::from_str(yaml).map_err(|e| {
       tracing::error!("tag deserialization : `{:?}`", e);
       DirectoryError::YamlDeserialization
     })?;
-    tags.insert(key.to_string(), tag);
+    tags.insert(tag.key.clone(), tag);
   }
   let mut items = HashMap::new();
   for item_file in DIRECTORY_FILES.files() {
-    let key = get_file_stem(item_file)?;
+    if !is_yaml(item_file) {
+      continue;
+    }
     let yaml = item_file.contents_utf8().ok_or(DirectoryError::CouldNotReadFile)?;
     let item: Item = serde_yaml::from_str(yaml).map_err(|e| {
       tracing::error!("item deserialization : `{:?}`", e);
       DirectoryError::YamlDeserialization
     })?;
-    items.insert(key.to_string(), item);
+    items.insert(item.key.clone(), item);
   }
   Ok(Directory { tags, items })
 }

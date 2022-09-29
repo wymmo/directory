@@ -11,7 +11,7 @@ Les autres fichiers sont simplement destinés à la vérification des données a
 
 2 format de fichiers sont présents dans ce dépot
 
-#### Les fiches `catégories`
+#### Les fiches `catégories` dans le dossier `directory/tags`
 ```yaml
 key: portail                    # la clé doit être obligatoirement identique au nom du fichier 
 title: Portails immobiliers     # titre de la catégorie
@@ -22,7 +22,7 @@ description:                    # paragraphes de texte libre permettant de docum
 
 ```
 
-#### les fiches `produit / entreprise`
+#### les fiches `produit / entreprise` à la racine du dossier `directory`
 
 ```yaml
 # wymmo.yaml
@@ -55,3 +55,8 @@ Vous avez les obligations de
 
 [Texte de la licence CC BY-SA en français](https://creativecommons.org/licenses/by/4.0/legalcode.fr)
 
+
+## Tester les données
+
+Pour vérifier la congruance des données, vous pouvez installer le langage [Rust](https://www.rust-lang.org/tools/install)
+Puis vous pouvez lancer la commande `cargo t` à la racine de ce dépôt.
