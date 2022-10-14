@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 
 use include_dir::*;
+use regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::{borrow::Cow, collections::HashMap};
 
@@ -14,6 +15,10 @@ pub enum DirectoryError {
   CouldNotReadFile,
   #[error("Yaml deserialization error")]
   YamlDeserialization,
+  #[error("File name and key do not match : file name : {0} / file key : {1}")]
+  FileNameAndKeyDoNotMatch(String, String),
+  #[error("File name or key does not match conventions (only lowercase alphanumeric characters) : {0}")]
+  ShouldMatchNamingConventions(String),
 }
 
 fn is_yaml(file: &File) -> bool {
@@ -23,6 +28,31 @@ fn is_yaml(file: &File) -> bool {
     .and_then(|ext| ext.to_str())
     .map(|ext| ext == "yaml" || ext == "yml")
     .unwrap_or(false)
+}
+
+static RE_KEYS: once_cell::sync::Lazy<Regex> = once_cell::sync::Lazy::new(|| Regex::new(r#"^[a-z0-9_]+$"#).unwrap());
+
+pub fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> {
+  let file_stem = file
+    .path()
+    .file_stem()
+    .and_then(|name| name.to_str())
+    .ok_or(DirectoryError::CouldNotReadFile)?;
+
+  if !RE_KEYS.is_match(file_stem) {
+    return Err(DirectoryError::ShouldMatchNamingConventions(file_stem.to_string()));
+  }
+  if !RE_KEYS.is_match(key) {
+    return Err(DirectoryError::ShouldMatchNamingConventions(key.to_string()));
+  }
+  
+  if file_stem != key {
+    return Err(DirectoryError::FileNameAndKeyDoNotMatch(
+      file_stem.to_string(),
+      key.to_string(),
+    ));
+  }
+  Ok(())
 }
 
 pub fn load_directory() -> Result<Directory, DirectoryError> {
@@ -37,6 +67,8 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
       tracing::error!("tag deserialization : `{:?}`", e);
       DirectoryError::YamlDeserialization
     })?;
+
+    check_filename_and_key(tag_file, &tag.key)?;
     tags.insert(tag.key.clone(), tag);
   }
   let mut items = HashMap::new();
@@ -49,6 +81,8 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
       tracing::error!("item deserialization : `{:?}`", e);
       DirectoryError::YamlDeserialization
     })?;
+
+    check_filename_and_key(item_file, &item.key)?;
     items.insert(item.key.clone(), item);
   }
   Ok(Directory { tags, items })
