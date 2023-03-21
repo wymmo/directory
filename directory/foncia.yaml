@@ -1,0 +1,26 @@
+key: foncia
+name: Foncia
+title: Réseau d'agences
+tags: ["reseau_agence"]
+description:
+  - |
+    Fondée en 1972 en France, Foncia est une entreprise d'administration de biens et de transaction immobilière. Très 
+    concentré sur le marché français, le Groupe Foncia est aussi présent à l'international sous la filiale d'Emeria. 
+  - |
+    Chiffres clés (2021) :
+  - |
+    • +600 agences en France ;
+    • +10 000 collaborateurs ;
+    • 20 000 transactions & 22 000 locations réalisées ;
+    • 10 000 copropriétés & 400 000 biens en location gérés ;
+  - |   
+    Services proposés :
+  - |
+    • Achat, location, vente ;
+    • Gestion locative ;
+    • Syndic ;
+    • Location vacances.
+
+url: https://fr.foncia.com
+backlink:
+

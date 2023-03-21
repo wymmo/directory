@@ -1,0 +1,28 @@
+key: ladresse
+name: L'Adresse
+title: Réseau d'agences
+tags: ["reseau_agence"]
+description:
+  - |
+    L'Adresse est née en 1999 d'une volonté de La Fédération Nationale de l'Immobilier (FNAIM), de repenser son organisation 
+    et sa stratégie. C'est ainsi que la création d'un réseau commercial immobilier s'est rendu comme une nécessité. 
+    Alors L'Adresse a vu le jour mais avce une particularité : c'est sous la forme de société coopérative que le groupe agit.
+    C'est à dire un système qui est fondé sur le principe de mutualisme et de solidarité.
+  - |
+    Chiffres clés (2021) :
+  - |
+    • 330 agences immobilières ;
+    • +1200 collaborateurs sur toute la France.
+  - |
+    Services proposés :
+  - |
+    • Transaction ;
+    • Location ;
+    • Gestion ;
+    • Location de vacance ;
+    • Syndic de copropriété.
+    ...
+
+url: http://www.ladresse.com
+backlink:
+

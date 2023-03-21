@@ -1,5 +1,10 @@
 key: mandataire_immobilier
-title: Mandaire immobilier
+title: Mandataire immobilier
 description:
   - |
-    TODO
+    Le mandataire immobilier ou agent commercial immobilier, à la différence de l'agent immobilier, 
+    ne dispose pas lui-même de la carte professionnelle de transaction immobilière.
+    Il doit par conséquent être affilié à un agent immobilier ou à un réseau d'agences immobilières.
+  - |
+    En conséquence de cette affiliation, l'agent commercial exerce au nom de son réseau d'agences à qui il incombe
+    les règlementations et responsabilités du métier de transaction immobilière.
