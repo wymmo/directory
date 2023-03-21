@@ -1,6 +1,6 @@
 key: orpi
 name: Orpi
-title: Réseau d'agences
+title: Orpi
 tags: ["reseau_agence"]
 description:
   - |
@@ -15,7 +15,7 @@ description:
     • 28 000 biens ;
     • 46 000 transactions immobilières d'année en année ;
     • 7 000 collaborateurs en France.
-  - |  
+  - |
     Services proposés :
   - |
     • Achat, vente, location, gestion locative ;
@@ -26,4 +26,3 @@ description:
 
 url: https://www.orpi.com
 backlink:
-

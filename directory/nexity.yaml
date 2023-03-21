@@ -1,6 +1,6 @@
 key: nexity
 name: Nexity
-title: Réseau d'agences
+title: Nexity
 tags: ["reseau_agence"]
 description:
   - |
@@ -11,8 +11,6 @@ description:
   - |
     • +250 agences en France ;
     • +8 300 collaborateurs.
- 
 
 url: https://www.nexity.fr
 backlink:
-

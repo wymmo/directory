@@ -1,6 +1,6 @@
 key: ladresse
 name: L'Adresse
-title: Réseau d'agences
+title: L'Adresse immobilier
 tags: ["reseau_agence"]
 description:
   - |
@@ -25,4 +25,3 @@ description:
 
 url: http://www.ladresse.com
 backlink:
-

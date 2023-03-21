@@ -1,7 +1,7 @@
 key: figaroimmo
 name: Figaro Immo
 title: Figaro Immo
-tags: ["portail"]
+tags: ["portail", "b2b", "b2c"]
 created_in:
 description:
   - |
@@ -12,7 +12,7 @@ description:
   - |
     Figaro Classifieds, éditeur de l'ancien Explorimmo, assure une ligne éditoriale où des experts du secteur proposent 
     des conseils pratiques, en analysant par exemple des prix ou en décryptant l'actualité immobilière, afin d'être au 
-    courant du contexte général et d'en tirer profit. 
+    courant du contexte général et d'en tirer profit.
 
 url: https://immobilier.lefigaro.fr
 backlink:

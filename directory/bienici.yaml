@@ -1,7 +1,7 @@
 key: bienici
 name: Bien'ici
 title: Demain commence ici
-tags: ["portail"]
+tags: ["portail", "b2b"]
 created_in: 2015
 description:
   - |
@@ -15,8 +15,7 @@ description:
   - |
     Les utilisateurs bénéficient de fonctionnalités pratiques, avancées et 
     innovantes comme le recherche par temps de trajet ou par point d'intérêt.
-    Il est par ailleurs possible de localiser facilement les commerces et les écoles, par exemple. 
-
+    Il est par ailleurs possible de localiser facilement les commerces et les écoles, par exemple.
 
 url: https://www.bienici.com
 backlink:

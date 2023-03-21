@@ -1,7 +1,7 @@
 key: leboncoin
 name: LeBonCoin
-title: LeBonCoin, le bon______pour tous.
-tags: ["portail"]
+title: LeBonCoin
+tags: ["portail", "b2b", "b2c"]
 created_in: 2006
 description:
   - |
@@ -11,7 +11,7 @@ description:
     En effet, sa popularité lui permet de proposer des listes interminables de résultats, tant le site est utilisé.
   - |
     Aujourd'hui, c'est un acteur incontournable pour les professionnels de l'immobilier, 
-    tout comme les particuliers souhaitant vendre leur bien ou ayant un projet d'achat. 
+    tout comme les particuliers souhaitant vendre leur bien ou ayant un projet d'achat.
 
 url: https://www.leboncoin.fr
 backlink:

@@ -1,21 +1,19 @@
 key: humanimmobilier
 name: Human Immobilier
-title: Réseau d'agences
+title: Human Immobilier
 tags: ["reseau_agence"]
 description:
   - |
     Human Immobilier, anciennement La Bourse de l'Immobilier, ets un réseau d'agences immobilières fondé en 1980
     dans le Sud-Ouest de la France. Le lancement du groupe s'est opéré pour créer le premier réseau indépendant français 
     d'agences immobilières. Le groupe n'est pas ouvert à la franchise et ets implanté sur seulement 1/3 de l'Hexagone, cela
-    ne l'empêche pas d'être un acteur très puissant de l'immobilier.  
+    ne l'empêche pas d'être un acteur très puissant de l'immobilier.
   - |
     Chiffres clés (2021) :
   - |
     • 650 agences en France ;
     • +2 500 collaborateurs ;
     • 1.700 salariés.
-   
 
 url: https://www.human-immobilier.fr
 backlink:
-
