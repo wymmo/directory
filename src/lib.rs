@@ -1,5 +1,5 @@
 mod directory;
-use directory::*;
+use crate::directory::*;
 
 #[allow(dead_code)]
 fn _a_fonction_to_user_everything() -> Result<(), DirectoryError> {
