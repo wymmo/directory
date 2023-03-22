@@ -30,7 +30,7 @@ fn is_yaml(file: &File) -> bool {
 
 static RE_KEYS: once_cell::sync::Lazy<Regex> = once_cell::sync::Lazy::new(|| Regex::new(r#"^[a-z0-9_]+$"#).unwrap());
 
-pub fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> {
+fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> {
   let file_stem = file
     .path()
     .file_stem()
@@ -47,6 +47,10 @@ pub fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryErr
   if file_stem != key {
     return Err(DirectoryError::FileNameAndKeyDoNotMatch(file_stem.to_string(), key.to_string()));
   }
+  Ok(())
+}
+
+pub fn validate_directory(_directory: &Directory) -> Result<(), DirectoryError> {
   Ok(())
 }
 
@@ -80,7 +84,9 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
     check_filename_and_key(item_file, &item.key)?;
     items.insert(item.key.clone(), item);
   }
-  Ok(Directory { tags, items })
+  let directory = Directory { tags, items };
+  validate_directory(&directory)?;
+  Ok(directory)
 }
 
 #[derive(Clone, Debug)]
@@ -150,5 +156,32 @@ mod tests {
     } else {
       Ok(())
     }
+  }
+
+  #[test]
+  pub fn test_check_filename_and_key() -> anyhow::Result<()> {
+    pretty_env_logger::try_init().ok();
+    assert!(matches!(check_filename_and_key(&File::new("plop", &[]), "plop"), Ok(())));
+    assert!(
+      matches!(check_filename_and_key(&File::new("PLOP", &[]), "plop"), Err(DirectoryError::ShouldMatchNamingConventions(s)) if s == "PLOP")
+    );
+    assert!(
+      matches!(check_filename_and_key(&File::new("plop", &[]), "PLOP"), Err(DirectoryError::ShouldMatchNamingConventions(s)) if s == "PLOP")
+    );
+    assert!(matches!(
+      check_filename_and_key(&File::new("plop.txt", &[]), "plop.txt"),
+      Err(DirectoryError::ShouldMatchNamingConventions(s)) if s == "plop.txt"
+    ));
+    assert!(matches!(check_filename_and_key(&File::new("pl_0_p.yaml", &[]), "pl_0_p"), Ok(())));
+    assert!(matches!(check_filename_and_key(&File::new("pl_0_p.md", &[]), "pl_0_p"), Ok(())));
+    assert!(matches!(check_filename_and_key(&File::new("pl_0_p.txt", &[]), "pl_0_p"), Ok(())));
+
+    assert!(matches!(check_filename_and_key(&File::new("pl0p", &[]), "pl0p"), Ok(())));
+    assert!(matches!(
+      check_filename_and_key(&File::new("pl0p", &[]), "plop"),
+      Err(DirectoryError::FileNameAndKeyDoNotMatch(file, key)) if file == "pl0p" && key == "plop"
+    ));
+
+    Ok(())
   }
 }
