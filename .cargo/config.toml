@@ -1,0 +1,3 @@
+[env]
+
+DIRECTORY_DATA_FOLDER = { value = "./directory", relative = true }

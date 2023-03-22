@@ -1,11 +1,9 @@
-#![allow(dead_code)]
-
 use include_dir::*;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::{borrow::Cow, collections::HashMap};
 
-static DIRECTORY_FILES: Dir = include_dir!("$CARGO_MANIFEST_DIR/directory");
+static DIRECTORY_FILES: Dir = include_dir!("$DIRECTORY_DATA_FOLDER");
 
 #[derive(thiserror::Error, Debug, Clone)]
 pub enum DirectoryError {
@@ -45,12 +43,9 @@ pub fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryErr
   if !RE_KEYS.is_match(key) {
     return Err(DirectoryError::ShouldMatchNamingConventions(key.to_string()));
   }
-  
+
   if file_stem != key {
-    return Err(DirectoryError::FileNameAndKeyDoNotMatch(
-      file_stem.to_string(),
-      key.to_string(),
-    ));
+    return Err(DirectoryError::FileNameAndKeyDoNotMatch(file_stem.to_string(), key.to_string()));
   }
   Ok(())
 }
