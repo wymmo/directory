@@ -1,4 +1,3 @@
-key: paruvendu
 name: ParuVendu
 title: ParuVendu, En plus d'économiser de l'argent vous gagnez du temps !
 tags: ["portail"]
@@ -7,10 +6,10 @@ description:
   - |
     ParuVendu est l'un des portails les plus anciens du marché et est le second sites 
     de petites annonces généralistes dans l'Hexagone. Professionnels et particuliers peuvent déposer 
-    leurs annonces sur le site de manière totalement gratuit. 
+    leurs annonces sur le site de manière totalement gratuit.
   - |
     Le portail met à disposition des internautes une gamme complète de services et d'outils pratiques. On 
-    y retrouve notamment l'envoi de nouvelles annonces par e-mail, la côte de l'occasion, etc. 
+    y retrouve notamment l'envoi de nouvelles annonces par e-mail, la côte de l'occasion, etc.
 
 url: https://www.paruvendu.fr
 backlink:

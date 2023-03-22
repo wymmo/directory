@@ -141,6 +141,7 @@ pub struct Directory {
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq)]
 pub struct Tag {
+  #[serde(default)]
   pub key: String,
   pub title: Cow<'static, str>,
   pub description: Vec<Cow<'static, str>>,
