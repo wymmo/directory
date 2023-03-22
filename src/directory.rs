@@ -1,10 +1,7 @@
 use include_dir::*;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
-use std::{
-  borrow::Cow,
-  collections::{HashMap, HashSet},
-};
+use std::{borrow::Cow, collections::HashMap};
 
 static DIRECTORY_FILES: Dir = include_dir!("$DIRECTORY_DATA_FOLDER");
 
@@ -16,8 +13,6 @@ pub enum DirectoryError {
   TagIsNotUnique(String),
   #[error("Item `{0}` is not unique, verify you don't have {0}.yaml and {0}.yml")]
   ItemIsNotUnique(String),
-  #[error("Key `{0}` is not unique accross tags & items, you should not have multiple files named {0}.yaml or {0}.yml ")]
-  KeyIsNotUnique(String),
   #[error("Directory file cound not be read")]
   CouldNotReadFile,
   #[error("Yaml deserialization error")]
@@ -60,21 +55,6 @@ fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> 
 
   if file_stem != key {
     return Err(DirectoryError::FileNameAndKeyDoNotMatch(file_stem.to_string(), key.to_string()));
-  }
-  Ok(())
-}
-
-pub fn validate_directory(directory: &Directory) -> Result<(), DirectoryError> {
-  let mut keys = HashSet::new();
-  for key in directory.tags.keys() {
-    if !keys.insert(key.clone()) {
-      return Err(DirectoryError::KeyIsNotUnique(key.clone()));
-    }
-  }
-  for key in directory.items.keys() {
-    if !keys.insert(key.clone()) {
-      return Err(DirectoryError::KeyIsNotUnique(key.clone()));
-    }
   }
   Ok(())
 }
@@ -129,7 +109,7 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
   }
 
   let directory = Directory { tags, items };
-  validate_directory(&directory)?;
+
   Ok(directory)
 }
 
@@ -163,19 +143,27 @@ pub struct Item {
 #[cfg(test)]
 mod tests {
   use super::*;
+  use std::collections::HashSet;
 
-  #[test]
-  pub fn read_all_directory() -> anyhow::Result<()> {
-    pretty_env_logger::try_init().ok();
-    let directory = load_directory()?;
+  pub fn validate_directory(directory: &Directory) -> anyhow::Result<()> {
+    let mut keys = HashSet::new();
+    for key in directory.tags.keys() {
+      if !keys.insert(key.clone()) {
+        anyhow::bail!("Key `{key}` is not unique accross tags & items, you should not have multiple {key}.yaml or {key}.yml files")
+      }
+    }
+    for key in directory.items.keys() {
+      if !keys.insert(key.clone()) {
+        anyhow::bail!("Key `{key}` is not unique accross tags & items, you should not have multiple {key}.yaml or {key}.yml files")
+      }
+    }
 
     let mut fail = false;
 
-    #[allow(clippy::for_kv_map)]
-    for (key, _tag) in &directory.tags {
+    for key in directory.tags.keys() {
       tracing::info!("- tag : `{}`", key);
       let mut found = false;
-      for (_item_key, item) in &directory.items {
+      for item in directory.items.values() {
         if item.tags.iter().any(|x| x.as_ref() == key.as_str()) {
           found = true;
           break;
@@ -198,10 +186,17 @@ mod tests {
     }
 
     if fail {
-      Err(anyhow::anyhow!("Some errors found in data"))
-    } else {
-      Ok(())
+      anyhow::bail!("Directory did not validate, see logs !")
     }
+
+    Ok(())
+  }
+
+  #[test]
+  pub fn validate_current_directory_files() -> anyhow::Result<()> {
+    pretty_env_logger::try_init().ok();
+    let directory = load_directory()?;
+    validate_directory(&directory)
   }
 
   #[test]
@@ -210,6 +205,9 @@ mod tests {
     assert!(matches!(check_filename_and_key(&File::new("plop", &[]), "plop"), Ok(())));
     assert!(
       matches!(check_filename_and_key(&File::new("PLOP", &[]), "plop"), Err(DirectoryError::ShouldMatchNamingConventions(s)) if s == "PLOP")
+    );
+    assert!(
+      matches!(check_filename_and_key(&File::new("plop .txt", &[]), "plop"), Err(DirectoryError::ShouldMatchNamingConventions(s)) if s == "plop ")
     );
     assert!(
       matches!(check_filename_and_key(&File::new("plop", &[]), "PLOP"), Err(DirectoryError::ShouldMatchNamingConventions(s)) if s == "PLOP")
@@ -227,6 +225,37 @@ mod tests {
       check_filename_and_key(&File::new("pl0p", &[]), "plop"),
       Err(DirectoryError::FileNameAndKeyDoNotMatch(file, key)) if file == "pl0p" && key == "plop"
     ));
+
+    Ok(())
+  }
+
+  #[test]
+  pub fn check_keys_must_be_unique() -> anyhow::Result<()> {
+    pretty_env_logger::try_init().ok();
+
+    let mut directory = Directory { items: Default::default(), tags: Default::default() };
+    assert!(matches!(validate_directory(&directory), Ok(())));
+
+    directory.items.insert(
+      "wymmo".to_string(),
+      Item {
+        key: "wymmo".into(),
+        name: "Wymmo".into(),
+        title: "Wymmo".into(),
+        tags: vec![],
+        created_in: Some(2005),
+        description: vec![],
+        url: "https://wymmo.com".parse()?,
+        backlink: None,
+      },
+    );
+    assert!(matches!(validate_directory(&directory), Ok(())));
+
+    let mut wrong_directory = directory.clone();
+    wrong_directory
+      .tags
+      .insert("wymmo".into(), Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec![] });
+    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
 
     Ok(())
   }
