@@ -1,7 +1,10 @@
 use include_dir::*;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
-use std::{borrow::Cow, collections::HashMap};
+use std::{
+  borrow::Cow,
+  collections::{HashMap, HashSet},
+};
 
 static DIRECTORY_FILES: Dir = include_dir!("$DIRECTORY_DATA_FOLDER");
 
@@ -9,6 +12,12 @@ static DIRECTORY_FILES: Dir = include_dir!("$DIRECTORY_DATA_FOLDER");
 pub enum DirectoryError {
   #[error("Directory tags non found")]
   TagsDirNotFound,
+  #[error("Tag `{0}` is not unique, verify you don't have {0}.yaml and {0}.yml")]
+  TagIsNotUnique(String),
+  #[error("Item `{0}` is not unique, verify you don't have {0}.yaml and {0}.yml")]
+  ItemIsNotUnique(String),
+  #[error("Key `{0}` is not unique accross tags & items, you should not have multiple files named {0}.yaml or {0}.yml ")]
+  KeyIsNotUnique(String),
   #[error("Directory file cound not be read")]
   CouldNotReadFile,
   #[error("Yaml deserialization error")]
@@ -30,12 +39,17 @@ fn is_yaml(file: &File) -> bool {
 
 static RE_KEYS: once_cell::sync::Lazy<Regex> = once_cell::sync::Lazy::new(|| Regex::new(r#"^[a-z0-9_]+$"#).unwrap());
 
-fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> {
+fn get_file_stem<'a>(file: &'a File) -> Result<&'a str, DirectoryError> {
   let file_stem = file
     .path()
     .file_stem()
     .and_then(|name| name.to_str())
     .ok_or(DirectoryError::CouldNotReadFile)?;
+  Ok(file_stem)
+}
+
+fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> {
+  let file_stem = get_file_stem(file)?;
 
   if !RE_KEYS.is_match(file_stem) {
     return Err(DirectoryError::ShouldMatchNamingConventions(file_stem.to_string()));
@@ -50,40 +64,70 @@ fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> 
   Ok(())
 }
 
-pub fn validate_directory(_directory: &Directory) -> Result<(), DirectoryError> {
+pub fn validate_directory(directory: &Directory) -> Result<(), DirectoryError> {
+  let mut keys = HashSet::new();
+  for key in directory.tags.keys() {
+    if !keys.insert(key.clone()) {
+      return Err(DirectoryError::KeyIsNotUnique(key.clone()));
+    }
+  }
+  for key in directory.items.keys() {
+    if !keys.insert(key.clone()) {
+      return Err(DirectoryError::KeyIsNotUnique(key.clone()));
+    }
+  }
   Ok(())
 }
 
 pub fn load_directory() -> Result<Directory, DirectoryError> {
   let tags_dir = DIRECTORY_FILES.get_dir("tags").ok_or(DirectoryError::TagsDirNotFound)?;
+
   let mut tags = HashMap::new();
   for tag_file in tags_dir.files() {
     if !is_yaml(tag_file) {
       continue;
     }
     let yaml = tag_file.contents_utf8().ok_or(DirectoryError::CouldNotReadFile)?;
-    let tag: Tag = serde_yaml::from_str(yaml).map_err(|e| {
+    let mut tag: Tag = serde_yaml::from_str(yaml).map_err(|e| {
       tracing::error!("tag deserialization : `{:?}`", e);
       DirectoryError::YamlDeserialization
     })?;
 
+    if tag.key.is_empty() {
+      tag.key = get_file_stem(tag_file)?.to_string();
+    }
+
     check_filename_and_key(tag_file, &tag.key)?;
-    tags.insert(tag.key.clone(), tag);
+
+    let key = tag.key.clone();
+    if tags.insert(key.clone(), tag).is_some() {
+      return Err(DirectoryError::TagIsNotUnique(key));
+    }
   }
+
   let mut items = HashMap::new();
   for item_file in DIRECTORY_FILES.files() {
     if !is_yaml(item_file) {
       continue;
     }
     let yaml = item_file.contents_utf8().ok_or(DirectoryError::CouldNotReadFile)?;
-    let item: Item = serde_yaml::from_str(yaml).map_err(|e| {
+    let mut item: Item = serde_yaml::from_str(yaml).map_err(|e| {
       tracing::error!("item deserialization : `{:?}`", e);
       DirectoryError::YamlDeserialization
     })?;
 
+    if item.key.is_empty() {
+      item.key = get_file_stem(item_file)?.to_string();
+    }
+
     check_filename_and_key(item_file, &item.key)?;
-    items.insert(item.key.clone(), item);
+
+    let key = item.key.clone();
+    if items.insert(key.clone(), item).is_some() {
+      return Err(DirectoryError::ItemIsNotUnique(key));
+    }
   }
+
   let directory = Directory { tags, items };
   validate_directory(&directory)?;
   Ok(directory)
@@ -104,6 +148,7 @@ pub struct Tag {
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq)]
 pub struct Item {
+  #[serde(default)]
   pub key: String,
   pub name: Cow<'static, str>,
   pub title: Cow<'static, str>,
