@@ -135,9 +135,30 @@ pub struct Item {
   pub title: Cow<'static, str>,
   pub tags: Vec<Cow<'static, str>>,
   pub created_in: Option<usize>,
+  pub concluded_in: Option<usize>,
   pub description: Vec<Cow<'static, str>>,
   pub url: url::Url,
   pub backlink: Option<url::Url>,
+
+  #[serde(default)]
+  pub links: Vec<DirectoryLink>,
+
+  #[serde(default)]
+  pub events: Vec<DirectoryEvent>,
+}
+
+#[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq)]
+pub struct DirectoryLink {
+  pub target_key: String,
+  pub begin_in: Option<usize>,
+  pub end_in: Option<usize>,
+  pub description: Cow<'static, str>,
+}
+
+#[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq)]
+pub struct DirectoryEvent {
+  pub happened_in: usize,
+  pub description: Cow<'static, str>,
 }
 
 #[cfg(test)]
@@ -230,9 +251,7 @@ mod tests {
   }
 
   #[test]
-  pub fn check_keys_must_be_unique() -> anyhow::Result<()> {
-    pretty_env_logger::try_init().ok();
-
+  pub fn assert_validations() -> anyhow::Result<()> {
     let mut directory = Directory { items: Default::default(), tags: Default::default() };
     assert!(matches!(validate_directory(&directory), Ok(())));
 
@@ -242,19 +261,56 @@ mod tests {
         key: "wymmo".into(),
         name: "Wymmo".into(),
         title: "Wymmo".into(),
-        tags: vec![],
+        tags: vec!["b2b".into()],
         created_in: Some(2005),
+        concluded_in: None,
         description: vec![],
         url: "https://wymmo.com".parse()?,
         backlink: None,
+        links: vec![],
+        events: vec![],
       },
     );
+    directory.items.insert(
+      "lbc".to_string(),
+      Item {
+        key: "lbc".into(),
+        name: "Vendre n'importe quoi, n'importe comment !".into(),
+        title: "LBC".into(),
+        tags: vec!["b2b".into()],
+        created_in: Some(2006),
+        concluded_in: None,
+        description: vec![],
+        url: "https://wymmo.com".parse()?,
+        backlink: None,
+        links: vec![],
+        events: vec![],
+      },
+    );
+    directory.tags.insert(
+      "b2b".to_string(),
+      Tag { key: "b2c".into(), title: "Business to consumer".into(), description: vec!["Le B2B,".into(), "c'est la vie".into()] },
+    );
+
     assert!(matches!(validate_directory(&directory), Ok(())));
 
     let mut wrong_directory = directory.clone();
     wrong_directory
       .tags
       .insert("wymmo".into(), Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec![] });
+    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+
+    let mut wrong_directory = directory.clone();
+    wrong_directory
+      .tags
+      .insert("not_used".to_string(), Tag { key: "not_used".into(), title: "This tag is not used".into(), description: vec![] });
+    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+
+    let mut wrong_directory = directory.clone();
+    wrong_directory
+      .items
+      .entry("wymmo".into())
+      .and_modify(|x| x.tags.push("not_existing_tag".into()));
     assert!(matches!(validate_directory(&wrong_directory), Err(_)));
 
     Ok(())
