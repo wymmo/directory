@@ -1,7 +1,7 @@
 name: Figaro Immo
 title: Figaro Immo
 tags: ["portail", "b2b", "b2c"]
-created_in:
+created_in: 2018
 description:
   - |
     Pionnière dans la mise en relation des professionnels et des particuliers de l'immobilier, Explorimmo est récemment
@@ -15,3 +15,7 @@ description:
 
 url: https://immobilier.lefigaro.fr
 backlink:
+
+events:
+  - happened_in: 2018
+    description: Explorimmo devient Figaro Immo
