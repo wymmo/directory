@@ -36,6 +36,7 @@ pub struct Tag {
   pub key: String,
   pub title: Cow<'static, str>,
   pub description: Vec<Cow<'static, str>>,
+  pub color: Option<Cow<'static, str>>,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq, Validate)]
@@ -331,7 +332,12 @@ mod tests {
     );
     directory.tags.insert(
       "b2b".to_string(),
-      Tag { key: "b2c".into(), title: "Business to consumer".into(), description: vec!["Le B2B,".into(), "c'est la vie".into()] },
+      Tag {
+        key: "b2c".into(),
+        title: "Business to consumer".into(),
+        description: vec!["Le B2B,".into(), "c'est la vie".into()],
+        color: None,
+      },
     );
 
     assert!(matches!(validate_directory(&directory), Ok(())));
@@ -354,14 +360,14 @@ mod tests {
     let mut wrong_directory = directory.clone();
     wrong_directory
       .tags
-      .insert("wymmo".into(), Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec!["description".into()] });
+      .insert("wymmo".into(), Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec!["description".into()], color: None });
     assert!(matches!(validate_directory(&wrong_directory), Err(_)));
 
     // adds a tag with a key that is use by no item
     let mut wrong_directory = directory.clone();
     wrong_directory.tags.insert(
       "not_used".to_string(),
-      Tag { key: "not_used".into(), title: "This tag is not used".into(), description: vec!["description".into()] },
+      Tag { key: "not_used".into(), title: "This tag is not used".into(), description: vec!["description".into()], color: None },
     );
     assert!(matches!(validate_directory(&wrong_directory), Err(_)));
 
