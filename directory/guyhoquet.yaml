@@ -4,24 +4,27 @@ tags: ["reseau_agence"]
 created_in: 1994
 description:
   - |
-    Guy Hoquet est un réseau d'agences immobilières crée en 1994, dont le réseau s'ouvre à la franchise dès l'année 1998.
-    Pourvue d'une expérience de plus de 20 ans dans les métiers de l'immobilier, le groupe 
-    possède 580 agences et figure parmi les leaders de la franchise immobilière. Guy Hoquet fait parti des membres de l'Arche 
-    - groupe d'entreprises français spécialisé dans l'immobilier.
+    Guy Hoquet l'Immobilier est une enseigne française de réseau d'agences fondée en 1994, dont la franchise s'ouvre dès l'année 1998.
+    Pourvue d'une expérience de plus de 20 ans dans les métiers de l'immobilier, et plus spécifiquement en vente, achat, 
+    location et gestion locative de biens immobiliers résidentiels et commerciaux, le groupe 
+    possède plus de 500 agences et figure parmi les leaders de la franchise immobilière. 
+   - |  
+    Le marché de l'immobilier continue de se restructurer avec l'acquisition de Guy Hoquet par 
+    la holding Arche en 2019, qui avait déjà racheté le réseau Laforêt en 2017. Guy Hoquet était précédemment 
+    détenu par le groupe de promotion immobilière Nexity depuis mars 2006. 
   - |
-    Chiffres clés (2021) :
+    Chiffres clés (2023) :
   - |
-    • 550 agences dans le monde ;
-    • 3000 collaborateurs ;
-    • +33 000 transactions immobilières.
-  - |
-    Services proposés :
-  - |
-    • Achat, vente, location de biens ;
-    • Gestion locative ;
-    • Financement ;
-    • Transactions en immobilier d'entreprise ;
-    • Cession de fonds de commerce.
+    • +500 agences dans le monde ;
+    • 12 000 locations;
+    • 3400 collaborateurs ;
+    • 15 000 transactions immobilières.
+ 
 
 url: https://www.guy-hoquet.com
 backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2019
+    description: Rejoint le groupe Arche

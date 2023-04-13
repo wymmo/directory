@@ -4,7 +4,7 @@ tags: ["portail", "b2b"]
 created_in: 1995
 description:
   - |
-    En 2018, SeLoger a fusionné avec Logic-Immo, qui répertorie exclusivement des annonces mises en ligne par des agences immobilières. 
+    En 2018, SeLoger a fusionné avec Logic-Immo, qui répertorie exsclusivement des annonces mises en ligne par des agences immobilières. 
     L'ambition est portée sur les enjeux des professionnels comme sur les besoins des particuliers, partout en France.
   - |
     Ce rapprochement a, entre autres, donné lieu à une offre appelée Duo : une solution 
@@ -15,6 +15,6 @@ url: https://www.logic-immo.com
 backlink:
 
 links:
-  - target_key: seloger_group
+  - target_key: groupe_seloger
     begin_in: 2018
     description: Axel Springer rachète Logic-Immo qui devient une filiale sœur de SeLoger

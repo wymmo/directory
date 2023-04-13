@@ -4,18 +4,31 @@ tags: ["reseau_agence"]
 created_in: 2017
 description:
   - |
-    Création : 2017
-
-    Nestenn est un groupe d'agences immobilières français, créé en 2017. Les agences partenaires sont ainsi présentes dans 
-    en France et à l'étranger. Née de la fusion des groupes immobiliers Solvimo et AVIS-Immobilier, Nastenn a été racheté 
-    par Arche, le géant français de l'immobilier.
+    Nestenn est un jeune groupe immobilier français fondé en 2017, résultant de la fusion de deux 
+    grandes enseignes immobilières, Avis-Immobilier et Solvimo. Le groupe a plus de 470 agences 
+    immobilières en franchise, avec une présence nationale et internationale. Fort de plus de 60 
+    années d'expertise cumulée dans l'immobilier, Nestenn offre à ses franchisés un large éventail
+    de services innovants et performants pour accompagner leur activité.
+  - |
+    Le groupe continue de se développer rapidement en France et à l'étranger, en se concentrant sur 
+    l'expansion de son réseau de franchises et en offrant à ses clients une expérience de service 
+    dans le domaine de l'immobilier.
+  - |
+    Par ailleurs, Nestenn vient d'annoncer la cession d'une partie majoritaire 
+    de son capital à la holding Arche, maison-mère de Citya Immobilier, Century 21, Laforêt et Guy Hoquet.
+    À date de 2022, c'est le dernier rachat majeur du groupe Arche.
   - |
     Chiffres clés (2021) :
   - |
-    • 470 agences en France et à l'international ; 
-    • +2 400 collaborateurs ;
-    • 15 000 transactions ;
-    • +20 000 biens à vendre ou louer.
+    • +430 agences en France et à l'international ; 
+    • 2 400 collaborateurs ;
+    • 12 500 transactions ;
+    • 7 000 locations.
 
 url: https://nestenn.com
 backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2022
+    description: Rejoint le groupe Arche

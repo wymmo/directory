@@ -15,7 +15,7 @@ url: https://www.seloger.com
 backlink:
 
 links:
-  - target_key: seloger_group
+  - target_key: groupe_seloger
     begin_in: 2019
     description: Creation du groupe SeLoger
 

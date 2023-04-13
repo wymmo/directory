@@ -1,26 +1,29 @@
-name: La Forêt
-title: La Forêt Immobilier
+name: Laforêt
+title: Laforêt Immobilier, 
 tags: ["reseau_agence"]
 created_in: 1981
 description:
   - |
-    La société LaForêt a été créée en 1981 lors de l'ouverture de sa première agence 
-    immobilière en tant qu'indépendant au nord de Paris. C'est en 1991 que LaForêt s'ouvre à la franchise. 
-    Le groupe, spécialiste de la gestion de biens immobiliers, est présent à l'international au Luxembourg et au Portugal. 
-    En 2017, Arche signe le rachat du groupe et accentue sa diversité d'activités au sein du secteur de l'immobilier.
+    La société Laforêt est une franchise immobilière française fondée en 1981 lors de l'ouverture de sa première agence 
+    immobilière en tant qu'indépendant au nord de Paris. C'est en 1991 que LaForêt s'ouvre à la franchise telle qu'on la connait de nos jours. 
   - |
-    Chiffres clés (2021) :
+    Cette entreprise familiale a su se développer au fil des ans pour devenir l'un des acteurs 
+    majeurs du marché de l'immobilier français. D'ailleurs, le spécialiste de la gestion de biens immobiliers est 
+    aussi présent à l'international, au Luxembourg et au Portugal. En 2017, Arche signe le rachat du groupe et 
+    accentue sa diversité d'activités au sein du secteur de l'immobilier.
+
   - |
-    • 750 agences ;
-    • 4 500 collaborateurs ;
-    • +45 000 transactions ;
-    • 50 000 biens sur le site.
+    Chiffres clés (2023) :
   - |
-    Services proposés :
-  - |
-    • Achat, vente, location ;
-    • Gestion locative ;
-    • Syndic de copropriété.
+    • 730 agences franchisés en France ;
+    • 4 000 collaborateurs ;
+    • 22 000 transactions ;
+    • 60 000 lots en gestion locative.
 
 url: https://www.laforet.com
 backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2017
+    description: Rejoint le groupe Arche
