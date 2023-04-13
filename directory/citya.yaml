@@ -4,16 +4,16 @@ tags: ["reseau_agence"]
 created_in: 1990
 description:
   - |
-Citya Immobilier est une entreprise française spécialisée dans la gestion immobilière, la location 
-et la vente de biens immobiliers. Fondée en 1990, elle est devenue l'une des principales entreprises 
-de gestion immobilière en France, avec plus de 600 agences et filiales dans tout le pays. En 2003, le groupe français 
-rejoint Arche et devient l'une des entreprises les plus anciennes de l'écosystème Arche.
+    Citya Immobilier est une entreprise française spécialisée dans la gestion immobilière, la location 
+    et la vente de biens immobiliers. Fondée en 1990, elle est devenue l'une des principales entreprises 
+    de gestion immobilière en France, avec plus de 600 agences et filiales dans tout le pays. En 2003, le groupe français 
+    rejoint Arche et devient l'une des entreprises les plus anciennes de l'écosystème Arche.
   - |
-Citya Immobilier propose une large gamme de services, allant de la gestion locative aux transactions 
-immobilières en passant par la gestion de copropriété. L'entreprise gère également des biens immobiliers 
-pour le compte d'investisseurs institutionnels et de particuliers.
+    Citya Immobilier propose une large gamme de services, allant de la gestion locative aux transactions 
+    immobilières en passant par la gestion de copropriété. L'entreprise gère également des biens immobiliers 
+    pour le compte d'investisseurs institutionnels et de particuliers.
   - |
-    Chiffres clés (2022) :
+    Chiffres clés (2023) :
   - |
     • 250 agences françaises dans 200 villes de France ;
     • 4500 collaborateurs en France ;
@@ -21,3 +21,8 @@ pour le compte d'investisseurs institutionnels et de particuliers.
 
 url: 	https://www.citya.com
 backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2003
+    description: Rejoint le groupe Arche
