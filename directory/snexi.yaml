@@ -1,0 +1,20 @@
+name: Snexi
+title: Snexi
+tags: ["diagnostic_immobilier"]
+created_in: 2013
+description:
+  - |
+    Snexi (Société Nationale d'Expertise Immobilière), filiale du groupe Arche depuis sa création en 2013, se spécialise 
+    dans la sélection et la formation d'opérateurs en état des lieux locatifs et diagnostics 
+    techniques immobiliers. Elle administre et anime un réseau national de partenaires professionnels 
+    dans ces domaines, qu'elle met à disposition des Administrateurs de Biens, agences immobilières, 
+    OPAC, ou toutes autres structures qui peuvent avoir besoin d'experts ou d'opérateurs compétents.
+
+
+url: https://www.snexi.fr
+backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2013
+    description: Filiale du groupe Arche

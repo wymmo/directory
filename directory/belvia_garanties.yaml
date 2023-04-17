@@ -1,0 +1,29 @@
+name: Belvia Garanties
+title: Belvia Garanties
+tags: ["assurance_immobilier"]
+created_in: 2012
+description:
+  - |
+    Belvia Garanties est une société de courtage en assurances, spécialisée dans la garantie 
+    des loyers impayés. Fondée en 2012, elle est une filiale du groupe ARCHE depuis 2015, et regroupe plus 
+    de 30 collaborateurs.   
+  - |   
+    Les missions de Belvia Garanties sont de certifier les dossiers des 
+    candidats locataires et en cas d'impayés de loyers, d'indemniser les propriétaires et de 
+    recouvrer les impayés auprès des locataires. La société a pour ambition de faciliter les 
+    relations entre les propriétaires et les locataires en offrant des solutions de garanties 
+    de loyers adaptées à leurs besoins.
+
+
+url: https://www.sas-arche.com
+backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2015
+    description: Rejoint le groupe Arche
+
+
+
+
+

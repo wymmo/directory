@@ -1,0 +1,27 @@
+name: API Financement
+title: API Financement
+tags: ["courtier_immobilier", "assurance_immobilier" , "b2c"]
+created_in: 2018
+description:
+  - |
+    API Financement est une société de courtage en crédits immobiliers et assurances 
+    qui accompagne ses clients tout au long de leur projet et négocie pour eux les meilleurs 
+    taux de prêts immobilier et de copropriété. Fondée en 2018 en tant que structure de financements 
+    du groupe Arche, API Financement s'est associée à plusieurs partenaires bancaires pour 
+    répondre aux besoins de l'ensemble de la clientèle en matière de financement immobilier. 
+  - |     
+    Elle est spécialisée dans les prêts immobiliers pour l'acquisition, la construction, 
+    les travaux et les renégociations, ainsi que dans les prêts copropriétés pour les travaux d'entretien, 
+    la rénovation et l'accompagnement à la transition énergétique. 
+  
+    
+ 
+
+
+url: https://www.api-financement.net
+backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2018
+    description: Filiale du groupe Arche

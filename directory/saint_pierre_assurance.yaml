@@ -1,0 +1,22 @@
+name: Saint Pierre Assurance
+title: Saint Pierre Assurance
+tags: ["assurance_immobilier"]
+created_in: 2009
+description:
+  - |
+    Fondée en 2009, Saint-Pierre Assurances est un cabinet de courtage spécialisé dans 
+    l'assurance immobilière. L'entreprise fournit des solutions d'assurance aux professionnels 
+    de l'immobilier et à leurs clients, en couvrant divers risques tels que la responsabilité 
+    civile professionnelle, la garantie financière, la protection juridique, les garanties locatives, etc.
+  - |
+    Depuis sa création, l'entreprise est une filiale du groupe Arche, qui rassemble entre autres, les réseaux Citya Immobilier, 
+    Laforêt, Guy Hoquet, Century 21 et Nestenn.
+
+
+url: https://www.stpierreassurances.com
+backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2010
+    description: Filiale du groupe Arche

@@ -1,20 +1,24 @@
 name: Bien'ici
-title: Demain commence ici
+title: Bien'ici
 tags: ["portail", "b2b"]
 created_in: 2015
 description:
   - |
-    Bien'ici permet des rencontres autour de sujets de l'immobilier entre professionnels du secteur et particuliers. 
-    Fondé en 2015 d'une entente entre profesionnels de l'immobilier, la croissance  du groupe ne s'arrête plus 
-    et place d'ailleurs Bien'ici sur le podium des portails immobiliers.
+
+    Bien'ici est une plateforme française d'annonces immobilières créée en 2015 par une coalition d'acteurs majeurs du monde de l'immobilier.
   - |
-    Le site propose une cartographie 3D de la France qui représente une véritable valeur ajoutée. 
-    En quelques années, Bien'ici a réussi le pari d'être plus innovant tout en étant 
-    moins onéreux que les autres acteurs payants du marché.
+    Grâce à sa technologie de cartographie 3D et de géolocalisation, Bien'ici offre une 
+    expérience de recherche immobilière intelligente en prenant en compte non seulement le 
+    logement en lui-même mais également la vie de quartier, les transports, les commerces et 
+    les écoles à proximité.
   - |
-    Les utilisateurs bénéficient de fonctionnalités pratiques, avancées et 
-    innovantes comme le recherche par temps de trajet ou par point d'intérêt.
-    Il est par ailleurs possible de localiser facilement les commerces et les écoles, par exemple.
+    En 2017, le groupe Arche, spécialisé dans l'immobilier et la gestion locative, rachète la plateforme Bien'ici. 
+
 
 url: https://www.bienici.com
 backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2017
+    description: Rejoint le groupe Arche
