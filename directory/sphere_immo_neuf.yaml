@@ -1,0 +1,19 @@
+name: Sphere Immo Neuf
+title: Sphere Immo Neuf
+tags: ["courtier_immobilier"]
+created_in: 2010
+description:
+  - |
+    Sphere Immo est un courtier en immobilier neuf fondé en 2011 qui a rapidement 
+    connu une croissance importante de son activité pour devenir le premier courtier 
+    immobilier neuf en France, que ce soit pour habiter ou investir.
+  - |
+    En 2021, Sphere Immo a rejoint officiellement la planète Arche en tant que filiale du groupe.
+
+url: https://www.sphere-immo.com
+backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2021
+    description: Rejoint le groupe Arche

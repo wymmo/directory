@@ -1,0 +1,25 @@
+name: Le Bon Agent
+title: Le Bon Agent
+tags: ["reseau_mandataire"]
+created_in: 2019
+description:
+  - |
+    Le Bon Agent est un réseau de mandataires immobiliers indépendants créé au début des années 2010. 
+    Avec une présence sur tout le territoire national, Le Bon Agent se positionne entre les agences 
+    traditionnelles et les centrales d'achat en proposant un service en ligne permettant aux personnes 
+    de s'installer chez elles en tant qu'agent commercial en immobilier. 
+  - |    
+    En janvier 2019, Le Bon Agent 
+    a rejoint le groupe Arche, dont la filiale Citya Immobilier a pris une participation majoritaire à 
+    hauteur de 90%. Ensemble, ils ont créé la marque "Citya Le Bon Agent", offrant aux clients la possibilité 
+    de réaliser leur projet immobilier avec l'une des sociétés du groupe selon leurs préférences. 
+    
+
+
+url: https://www.lebonagent.fr
+backlink:
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2019
+    description: Rejoint le groupe Arche
