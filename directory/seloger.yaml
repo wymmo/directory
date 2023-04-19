@@ -1,15 +1,16 @@
 name: SeLoger.com
 title: Avec vous quand la vie bouge
-tags: ["portail", "b2b"]
+tags: ["portail"]
 created_in: 1992
 description:
   - |
-    SeLoger.com est aujourd'hui le portail immobilier de référence. Grâce à son ancienneté, il est le leader du secteur 
-    et permet la concrétisation de projet immobilier, mettant en relation des professionnels comme des particuliers.
-  - |
-    Le site a fait du recensement d'annonces immobilières sa seule activité et met l'accent sur la qualité de ses annonces, 
-    publiées dans leur très large majorité par de vrais agents immobiliers. C'est pourquoi aujourd'hui, le site propose 
-    plus d'un million d'annonces.
+    Seloger est un portail immobilier généraliste qui a été fondé en 1996, qui 
+    offre une gamme de services liés à l'immobilier. Toutefois, l'histoire de 
+    la société remonte à 1989 avec la mise en place d'un minitel appelé "3615 Seloger". En 1995, la société 
+    s'est lancée dans la presse immobilière spécialisée avant de créer le site internet Seloger.com en 1996. 
+  - |    
+    Depuis, la société s'est diversifiée et est devenue un groupe, qui depuis 2011, 
+    est désormais propriété du groupe allemand Axel Springer.
 
 url: https://www.seloger.com
 backlink:
@@ -17,7 +18,7 @@ backlink:
 links:
   - target_key: groupe_seloger
     begin_in: 2019
-    description: Creation du groupe SeLoger
+    description: Création du Groupe SeLoger
 
 events:
   - happened_in: 2011

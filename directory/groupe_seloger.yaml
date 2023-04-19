@@ -1,15 +1,24 @@
 name: Groupe SeLoger
-title: SeLoger le groupe
-tags: []
+title: Groupe SeLoger
+tags: ["groupe"]
 created_in: 2019
 description:
   - |
-    SeLoger.com est aujourd'hui le portail immobilier de référence. Grâce à son ancienneté, il est le leader du secteur 
-    et permet la concrétisation de projet immobilier, mettant en relation des professionnels comme des particuliers.
+    Le Groupe SeLoger est un groupe français spécialisé dans l'immobilier, qui regroupe plusieurs sites web 
+    d'annonces immobilières ainsi que des magazines spécialisés. Créé en 1989 avec le lancement du portail 
+    sur Minitel appelé « 3615 Seloger », le groupe s'est diversifié au fil des ans et compte aujourd'hui 
+    plusieurs marques spécialisées dans différents domaines de l'immobilier, tels que l'ancien, le luxe, 
+    le neuf, les bureaux et commerces, la construction et la location de vacances. 
+  - |    
+    Le Groupe SeLoger a été créé en 2019 dans le but de regrouper ses 11 marques spécialisées 
+    dans différents domaines de l'immobilier sous une même structure unique. Cette consolidation 
+    permet de mieux structurer l'offre de l'entreprise et de faciliter l'harmonisation de ses services pour les clients.
   - |
-    Le site a fait du recensement d'annonces immobilières sa seule activité et met l'accent sur la qualité de ses annonces, 
-    publiées dans leur très large majorité par de vrais agents immobiliers. C'est pourquoi aujourd'hui, le site propose 
-    plus d'un million d'annonces.
+    Les marques du groupe 
+    comprennent SeLoger, Logic-Immo, BellesDemeures.com, SeLogerNeuf.com, Logic-Immo Neuf, SeLoger Bureaux 
+    et Commerces, SeLoger Construire, Logic-Immo Faire Construire, SeLoger Vacances, Vacances.com, Amivac et plus 
+    récemment Meilleursagents.
 
-url: https://pro.groupeseloger.com/
+
+url: https://www.groupeseloger.com
 backlink:

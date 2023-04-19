@@ -1,0 +1,25 @@
+name: MeilleursBiens
+title: MeilleursBiens
+tags: ["reseau_mandataire"]
+created_in: 2010
+description:
+  - |
+    MeilleursBiens est un petit réseau de mandataires fondé en 2010 et concentré jusqu'à 
+    présent sur la région parisienne. En septembre 2018, il a revu son offre en s'inspirant 
+    des modèles qui ont connu le succès aux États-Unis et au Canada. Ce choix judicieux a 
+    permis à l'entreprise de se développer en répondant aux attentes des agents immobiliers 
+    expérimentés qui cherchent à travailler en toute indépendance. À date d'avril 2023, MeilleursBiens
+    enregistre un recrutement de plus de 400 agents commerciaux. Le réseau ne regroupe que des 
+    professionnels ayant déjà une grande expérience du métier et propose un avantage rare dans la profession : il reverse 
+    à ses négociateurs indépendants 100 % de la commission qu'ils génèrent.
+  - |
+    D'ailleurs, MeilleursBiens s'est associé, en 2022, au portage salarial Prium City pour favoriser un tarif préférentiel à ses 
+    agents commerciaux.  
+
+url: https://meilleursbiens.com
+backlink:
+
+links:
+  - target_key: prium_city
+    begin_in: 2022
+    description: Partenariat avec Prium City

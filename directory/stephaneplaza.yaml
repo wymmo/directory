@@ -4,23 +4,16 @@ tags: ["reseau_agence"]
 created_in: 2014
 description:
   - |
-    Stéphane Plaza Immobilier a vu le jour par 
-
-    Année de création du réseau : 2014 
-     Année de création de la franchise : 2015
-
-     Stéphane Plaza Immobilier est un réseau français d'agences immobilières créé en 2015
-
-     L'enseigne qui avait inauguré sa première agence pilote en avril 2015 dans le 11e arrondissement de la capitale
-
-  - |
-    Chiffres clés (2021) :
-  - |
-    • 610 agences
-  - |
-    Services proposés :
-  - |
-    •
+    Stéphane Plaza Immobilier est un réseau d'agences immobilières créé en 2014 par l'animateur 
+    télé du même nom, en association avec Bernard de Crémiers et Patrick-Michel Khider, deux anciens 
+    du réseau Laforêt et la chaîne de télévision M6. Stéphane Plaza a prêté son nom et son image contre 
+    une part de 25,5% du capital de l'entreprise. En janvier 2022, le groupe M6 est devenu majoritaire 
+    au capital de la société à hauteur de 51%, alors qu'en fin d'année 2021 il detenait 49%. Cette 
+    transaction lui permet de prendre le contrôle total du réseau d'agences immobilières franchisées.
 
 url: https://www.stephaneplazaimmobilier.com
 backlink:
+
+events:
+  - happened_in: 2015
+    description: Ouverture à la franchise. 
