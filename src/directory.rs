@@ -1,7 +1,7 @@
 use include_dir::*;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
-use std::{borrow::Cow, collections::HashMap};
+use std::{borrow::Cow, collections::BTreeMap};
 use validator::Validate;
 
 static DIRECTORY_FILES: Dir = include_dir!("$DIRECTORY_DATA_FOLDER");
@@ -26,8 +26,8 @@ pub enum DirectoryError {
 
 #[derive(Clone, Debug, Validate)]
 pub struct Directory {
-  pub tags: HashMap<String, Tag>,
-  pub items: HashMap<String, Item>,
+  pub tags: BTreeMap<String, Tag>,
+  pub items: BTreeMap<String, Item>,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq, Validate)]
@@ -114,7 +114,7 @@ fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> 
 pub fn load_directory() -> Result<Directory, DirectoryError> {
   let tags_dir = DIRECTORY_FILES.get_dir("tags").ok_or(DirectoryError::TagsDirNotFound)?;
 
-  let mut tags = HashMap::new();
+  let mut tags = BTreeMap::new();
   for tag_file in tags_dir.files() {
     if !is_yaml(tag_file) {
       continue;
@@ -138,7 +138,7 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
     }
   }
 
-  let mut items = HashMap::new();
+  let mut items = BTreeMap::new();
   for item_file in DIRECTORY_FILES.files() {
     if !is_yaml(item_file) {
       continue;
