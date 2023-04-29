@@ -1,21 +1,17 @@
 name: IHS Conseil
 title: IHS Conseil
-tags: ["courtier_immobilier", "assurance_immobilier" , "diagnostic_immobilier"]
+tags: ["courtier_immobilier", "assurance_immobilier", "diagnostic_immobilier"]
 created_in: 2020
 description:
   - |
     Interface Services Habitat (IHS) Conseil est une filiale du groupe Arche lancée en 2020. 
     C'est une plateformes qui propose des prestations pour les institutionnels publics 
-    et les grandes entreprises. 
-  - |    
+    et les grandes entreprises.
+  - |
     ISH Conseil s'appuie sur les équipes des réseaux immobiliers du groupe
     Arche pour offrir des services opérationnels tels que la transaction, la gestion, le syndic, la 
     location, les diagnostics réglementaires et les états des lieux. Elle propose également des services 
     de courtage en banque et assurances pour les prêts aux copropriétés et les assurances, ainsi que des prestations de conseil.
-  
-    
- 
-
 
 url: https://www.ish-conseil.com
 backlink:
