@@ -2,6 +2,7 @@ name: Wymmo.com
 title: Wymmo, Où voudriez-vous habiter
 tags: ["portail", "gratuit", "b2b"]
 created_in: 2021
+icon_key: wymmo
 description:
   - |
     Wymmo.com est un portail d'informations et d'annonces immobilières. 
