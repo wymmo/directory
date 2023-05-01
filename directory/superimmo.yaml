@@ -2,6 +2,7 @@ name: Superimmo
 title: Superimmo, pour votre recherche immobilière
 tags: ["portail", "gratuit", "b2b"]
 created_in: 2012
+icon: superimmo.png
 description:
   - |
     Superimmo est un site d'annonces immobilières de vente ou location sur le territoire français. 
