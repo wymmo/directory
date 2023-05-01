@@ -4,12 +4,17 @@ use serde::{Deserialize, Serialize};
 use std::{borrow::Cow, collections::BTreeMap};
 use validator::Validate;
 
+const TAGS_DIR: &str = "tags";
+const ICONS_DIR: &str = "icons";
+
 static DIRECTORY_FILES: Dir = include_dir!("$DIRECTORY_DATA_FOLDER");
 
 #[derive(thiserror::Error, Debug, Clone)]
 pub enum DirectoryError {
   #[error("Directory tags non found")]
   TagsDirNotFound,
+  #[error("Directory icons non found")]
+  IconsDirNotFound,
   #[error("Tag `{0}` is not unique, verify you don't have {0}.yaml and {0}.yml")]
   TagIsNotUnique(String),
   #[error("Item `{0}` is not unique, verify you don't have {0}.yaml and {0}.yml")]
@@ -37,7 +42,7 @@ pub struct Tag {
   pub title: Cow<'static, str>,
   pub description: Vec<Cow<'static, str>>,
   pub color: Option<Cow<'static, str>>,
-  pub icon_key: Option<Cow<'static, str>>,
+  pub icon: Option<Cow<'static, str>>,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq, Validate)]
@@ -52,7 +57,7 @@ pub struct Item {
   pub description: Vec<Cow<'static, str>>,
   pub url: url::Url,
   pub backlink: Option<url::Url>,
-  pub icon_key: Option<Cow<'static, str>>,
+  pub icon: Option<Cow<'static, str>>,
 
   #[serde(default)]
   pub links: Vec<DirectoryLink>,
@@ -114,7 +119,8 @@ fn check_filename_and_key(file: &File, key: &str) -> Result<(), DirectoryError> 
 }
 
 pub fn load_directory() -> Result<Directory, DirectoryError> {
-  let tags_dir = DIRECTORY_FILES.get_dir("tags").ok_or(DirectoryError::TagsDirNotFound)?;
+  let tags_dir = DIRECTORY_FILES.get_dir(TAGS_DIR).ok_or(DirectoryError::TagsDirNotFound)?;
+  let _icons_dir = DIRECTORY_FILES.get_dir(ICONS_DIR).ok_or(DirectoryError::IconsDirNotFound)?;
 
   let mut tags = BTreeMap::new();
   for tag_file in tags_dir.files() {
@@ -211,6 +217,8 @@ mod tests {
   }
 
   pub fn validate_directory(directory: &Directory) -> anyhow::Result<()> {
+    let icons_dir = DIRECTORY_FILES.get_dir(ICONS_DIR).ok_or(DirectoryError::IconsDirNotFound)?;
+
     let mut fail = false;
 
     let mut keys = HashSet::new();
@@ -243,6 +251,14 @@ mod tests {
       if tag.description.is_empty() {
         tracing::error!("tag `{}` has no description", tag_key);
         fail = true;
+      }
+
+      if let Some(file_name) = &tag.icon {
+        let file_name = format!("{ICONS_DIR}/{file_name}");
+        if icons_dir.get_file(&file_name).is_none() {
+          tracing::error!("icon file `{file_name}` for tag `{tag_key}` not found");
+          fail = true;
+        }
       }
     }
 
@@ -281,6 +297,14 @@ mod tests {
           fail = true;
         }
       }
+
+      if let Some(file_name) = &item.icon {
+        let file_name = format!("{ICONS_DIR}/{file_name}");
+        if icons_dir.get_file(&file_name).is_none() {
+          tracing::error!("icon file `{file_name}` for item `{item_key}` not found");
+          fail = true;
+        }
+      }
     }
 
     if fail {
@@ -307,7 +331,7 @@ mod tests {
         description: vec!["Où !! Mais où ! Parles !".into()],
         url: "https://wymmo.com".parse()?,
         backlink: None,
-        icon_key: None,
+        icon: None,
         links: vec![],
         events: vec![],
       },
@@ -324,7 +348,7 @@ mod tests {
         description: vec!["Le Bon Canard".into()],
         url: "https://wymmo.com".parse()?,
         backlink: None,
-        icon_key: None,
+        icon: None,
         links: vec![DirectoryLink {
           target_key: "wymmo".into(),
           begin_in: 2026,
@@ -341,7 +365,7 @@ mod tests {
         title: "Business to consumer".into(),
         description: vec!["Le B2B,".into(), "c'est la vie".into()],
         color: None,
-        icon_key: None,
+        icon: None,
       },
     );
 
@@ -365,7 +389,7 @@ mod tests {
     let mut wrong_directory = directory.clone();
     wrong_directory.tags.insert(
       "wymmo".into(),
-      Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec!["description".into()], color: None, icon_key: None },
+      Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec!["description".into()], color: None, icon: None },
     );
     assert!(matches!(validate_directory(&wrong_directory), Err(_)));
 
@@ -378,7 +402,7 @@ mod tests {
         title: "This tag is not used".into(),
         description: vec!["description".into()],
         color: None,
-        icon_key: None,
+        icon: None,
       },
     );
     assert!(matches!(validate_directory(&wrong_directory), Err(_)));
