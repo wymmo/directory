@@ -1,4 +1,4 @@
-# Annuaire Wymmo.com / Les Pros de l'immo
+# Annuaire Wymmo.com / Les Pros de l'immobilier
 
 Vous pouvez contribuer à l'annuaire [wymmo.com](https://www.wymmo.com) en nous soumettant une Pull Request.
 
