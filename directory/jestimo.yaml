@@ -1,0 +1,25 @@
+name: Jestimo
+title: Jestimo
+tags: ["estimation"]
+created_in: 2012
+description:
+
+  - |
+    Jestimo est une entreprise fondée en 2012 qui a pour objectif 
+    d'aider les professionnels de l'immobilier dans l'estimation des biens immobiliers. 
+    Grâce à une suite d'applications, Jestimo permet aux agents immobiliers d'évaluer 
+    précisément tous types de biens immobiliers en France métropolitaine et de fournir 
+    un dossier complet et personnalisé à leurs clients, basé sur des données objectives. 
+    Le dossier fournit également des informations sur les tendances actuelles du marché 
+    local où le bien est situé. L'estimation immobilière de Jestimo offre les conditions 
+    optimales de valeur vénale pour les logements à vendre.
+    
+links:
+  - target_key: groupe_dl_software 
+    begin_in: 2021
+    description: Rejoint le Groupe DL Software  
+
+url: https://www.jestimo.fr/
+backlink:
+
+
