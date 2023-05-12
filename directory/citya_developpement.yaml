@@ -18,3 +18,7 @@ links:
   - target_key: groupe_arche
     begin_in: 2017
     description: Rejoint le groupe Arche
+
+  - target_key: citya
+    begin_in: 2016
+    description: Filiale de Citya Immobilier

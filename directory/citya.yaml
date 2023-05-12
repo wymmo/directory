@@ -26,3 +26,7 @@ links:
   - target_key: groupe_arche
     begin_in: 2003
     description: Rejoint le groupe Arche
+
+  - target_key: fnaim
+    begin_in: 2015
+    description: Partenaire de la FNAIM
