@@ -1,0 +1,26 @@
+name: Explorimmo Neuf
+title: Explorimmo Neuf
+tags: ["portail"]
+created_in: 2003
+description:
+  - |
+    Explorimmoneuf est un portail spécialisé dans l'immobilier neuf. Il est apparu en 2003, 3 ans après la création de 
+    son grand frère Explorimmo, et propose des biens à l'achat ou à l'investissement dans toute 
+    la France. Les annonces sont diffusées sur 
+    le site web d'Explorimmo ainsi que sur les sites de ses partenaires. Les visiteurs du site 
+    peuvent également accéder à des actualités régionales, des conseils d'experts et des offres promotionnelles.
+  - |
+    En 2018, les marques Explorimmo et Explorimmo Neuf ont été rachetées et sont maintenant 
+    sous l'égide de Figaro Classifieds, filiale du groupe Figaro. Elles ont été renommées Figaro Immo et Figaro ImmoNeuf.
+
+url: https://www.explorimmoneuf.com/
+backlink:
+
+events:
+  - happened_in: 2018
+    description: Explorimmo Neuf devient Figaro ImmoNeuf
+
+links:
+  - target_key: figaroimmoneuf
+    begin_in: 2018
+    description: Appartient à Figaro Classifieds, filiale du groupe Figaro

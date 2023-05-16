@@ -1,0 +1,27 @@
+name: Explorimmo
+title: Explorimmo
+tags: ["portail"]
+created_in: 2000
+description:
+  - |
+    Explorimmo est un portail immobilier de premier plan, offrant une plate-forme centrale pour les annonces 
+    immobilières dans toute la France et à l'étranger. Il rassemble une gamme d'annonces immobilières 
+    pour les personnes cherchant à acheter, vendre ou louer des biens immobiliers tels que des maisons, des appartements 
+    et des villas. En tant que site généraliste, il propose une sélection de biens immobiliers neufs et anciens provenant 
+    aussi bien de particuliers que de professionnels de l'immobilier, tels que des agences. 
+  - |
+    En 2018, les marques Explorimmo et Explorimmo Neuf ont été acquises par le groupe Figaro, et sont désormais 
+    des produits de Figaro Classifieds, une filiale du groupe. Elles ont été renommées respectivement Figaro Immo 
+    et Figaro ImmoNeuf.
+
+url: https://immobilier.lefigaro.fr/
+backlink:
+
+events:
+  - happened_in: 2018
+    description: Explorimmo devient FigaroImmo
+
+links:
+  - target_key: figaroimmo
+    begin_in: 2018
+    description: Appartient à Figaro Classifieds, filiale du groupe Figaro

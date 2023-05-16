@@ -1,0 +1,18 @@
+name: Achat-Terrain
+title: Achat-Terrain
+tags: ["portail"]
+created_in: 2005
+description:
+  - |
+    Achat-Terrain est une plateforme appartenant au groupe média Figaro Classifieds, spécialisée dans 
+    la diffusion d'annonces de vente de terrains et la présentation des constructeurs de maisons individuelles. 
+    Elle répond à un besoin important des acheteurs qui ont des projets de construction et cherchent un portail 
+    immobilier dédié pour trouver des annonces de vente de terrains, des conseils et des solutions pour leur projet. 
+
+url: https://www.achat-terrain.com/
+backlink:
+
+links:
+  - target_key: figaroclassifieds
+    begin_in: 2016
+    description: Appartient à Figaro Classifieds, filiale LeFigaro
