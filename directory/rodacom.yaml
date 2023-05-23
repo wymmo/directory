@@ -1,0 +1,20 @@
+name: Rodacom
+title: Rodacom
+tags: ["solution_web"]
+created_in: 2003
+description:
+  - |
+    Rodacom est une entreprise spécialisée dans les solutions informatiques pour les agences immobilières et 
+    les réseaux. Leur objectif est d'aider ces acteurs à améliorer leur gestion quotidienne, à accroître leurs 
+    performances commerciales et à s'adapter aux évolutions du marché immobilier. Avec plus de 700 agences équipées 
+    de leurs solutions à travers la France, Rodacom contribue à la croissance du secteur. Leur expertise et 
+    leurs stratégies pertinentes leur permettent d'accompagner efficacement les professionnels de l'immobilier 
+    dans leur digitalisation et d'offrir des leviers de croissance pour leur activité.
+
+url: https://www.rodacom.fr/
+backlink:
+
+links:
+  - target_key: groupe_dplogiciels
+    begin_in: 2019
+    description: Rejoint le groupe DP Logiciels

@@ -1,0 +1,20 @@
+name: Entities
+title: Entities
+tags: ["solution_web"]
+created_in: 2010
+description:
+  - |
+    Entities, une filiale du groupe DP Logiciels, développe des solutions web personnalisées pour 
+    les professionnels de l'immobilier. Leur offre comprend la création de sites internet, la diffusion 
+    d'annonces immobilières, la gestion des prospects et d'autres services liés au webmarketing. Leur objectif 
+    est d'aider les acteurs de l'immobilier à conquérir de nouveaux clients grâce à la digitalisation. Entities 
+    se positionne comme un partenaire expert dans le domaine, offrant des solutions adaptées aux besoins spécifiques 
+    de chaque client.
+
+url: https://www.entities.fr/
+backlink:
+
+links:
+  - target_key: groupe_dplogiciels
+    begin_in: 2015
+    description: Rejoint le groupe DP Logiciels

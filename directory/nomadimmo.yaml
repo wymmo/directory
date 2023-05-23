@@ -1,0 +1,19 @@
+name: Nomadimmo
+title: Nomadimmo
+tags: ["logiciel_gestion_agence"]
+created_in: 2016
+description:
+  - |
+      Webgenery, fort de ses 18 années d'expérience dans la création de sites internet immobiliers et 
+      le développement d'outils métiers pour les agences immobilières, possède son logiciel de gestion d'agence Nomadimmo.
+      répond aux besoins essentiels des activités immobilières de transaction et de location sur le web. 
+      Il offre une connexion 100% web et mobile couvrant plusieurs fonctionnalités conçues pour améliorer la 
+      commercialisation des offres immobilières et leur diffusion sur le web. 
+    
+url: https://www.webgenery.com/
+backlink:
+
+links:
+  - target_key: webgenery
+    begin_in: 2016
+    description: Appartient à Webgenery

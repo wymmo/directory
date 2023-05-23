@@ -1,0 +1,20 @@
+name: Tissot
+title: Tissot
+tags: ["editeur_juridique"]
+created_in: 1973
+description:
+  - |
+    Tissot est le leader national dans l'édition de formulaires juridiques immobiliers. Avec plus de 
+    400 références de documents, ils offrent des solutions de qualité, constamment mises à jour par leur 
+    service juridique. Depuis leur création en 1973, Tissot s'est positionné comme un acteur majeur 
+    dans le domaine, répondant aux besoins des professionnels de l'immobilier. En rejoignant le groupe DP Logiciels, lui-même
+    absorbé par le groupe Septeo 
+    en 2018, ils ont renforcé leurs services et élargi leur gamme de solutions pour mieux servir leurs clients.
+
+url: https://www.tissot.fr/
+backlink:
+
+links:
+  - target_key: groupe_dplogiciels
+    begin_in: 2018
+    description: Rejoint le groupe DP Logiciels

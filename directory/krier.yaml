@@ -1,0 +1,22 @@
+name: Krier
+title: Krier
+tags: ["suite_de_logiciel" , "gestion_locative" , "syndic"]
+created_in: 1989
+description:
+  - |
+    Depuis plus de 30 ans, Krier propose des solutions logicielles et digitales aux professionnels de 
+    l'immobilier. Leurs solutions couvrent tous les métiers immobiliers, de la transaction à la location, 
+    en passant par le syndic et la gérance locative. Grâce à leur expertise et à des mises à jour régulières, 
+    ils offrent un service de qualité aux utilisateurs. Krier s'adapte à la digitalisation croissante du secteur 
+    immobilier en proposant des solutions accessibles via le web et en intégrant des fonctionnalités modernes 
+    telles que la signature électronique et les assemblées générales en visioconférence. Leurs objectifs futurs 
+    incluent le renforcement de la communication entre leurs différents logiciels, le développement de formations 
+    digitales et une évolution de leur identité visuelle.
+
+url: https://www.krier.fr/
+backlink:
+
+links:
+  - target_key: groupe_dplogiciels
+    begin_in: 2006
+    description: Filiale du groupe DP Logiciels
