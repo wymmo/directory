@@ -1,0 +1,18 @@
+name: Netty
+title: Netty
+tags: ["logiciel_gestion_agence"]
+created_in: 2008
+description:
+  - |
+    Netty propose une solution complète de développement web pour les professionnels de l'immobilier.
+    Leur offre comprend un logiciel immobilier performant, des sites web adaptés au secteur, 
+    ainsi que des services de webmarketing. L'objectif de Netty est d'améliorer les performances 
+    et la productivité des agences immobilières tout en simplifiant leur quotidien.
+
+url: https://www.netty.fr/
+backlink:
+
+links:
+  - target_key: groupe_septeo
+    begin_in: 2021
+    description: Rejoint le groupe Septeo

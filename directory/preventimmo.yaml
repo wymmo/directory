@@ -1,0 +1,21 @@
+name: Preventimmo
+title: Preventimmo
+tags: ["urbanisme"]
+created_in: 2010
+description:
+  - |
+    Preventimmo, une marque du groupe Kinaxia appartenant à Septeo, est une solution novatrice d'urbanisme en ligne. Depuis son 
+    lancement en 2010, Preventimmo s'est imposé comme un acteur majeur de son secteur, fournissant 
+    des renseignements d'urbanisme en France. Avec plus de 10 000 clients, dont des notaires, des promoteurs et des 
+    diagnostiqueurs immobiliers, Preventimmo délivre chaque année plus d'un million de documents, tels que l'État des 
+    Risques & Pollutions, la Note de Renseignements d'Urbanisme, les Certificats & Attestations, ainsi que des études 
+    spécifiques. C'est une équipe d'experts composée de plus de 80 professionnels en urbanisme, géographie et 
+    architecture, qui assure la qualité et la fiabilité de ses documents.
+    
+url: https://www.preventimmo.fr/
+backlink:
+
+links:
+  - target_key: groupe_kinaxia
+    begin_in: 2010
+    description: Appartient au groupe Kinaxia

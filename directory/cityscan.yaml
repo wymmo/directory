@@ -1,0 +1,22 @@
+name: Cityscan
+title: Cityscan
+tags: ["estimation"]
+created_in: 2017
+description:
+  - |
+    CityScan, créée en 2017, est une solution d'évaluation immobilière innovante basée sur 
+    la smart data. Depuis son rachat par le Groupe Septeo en 2021, elle est devenue un outil essentiel 
+    pour les professionnels de l'immobilier. Avec son algorithme unique, CityScan utilise l'analyse approfondie 
+    de l'emplacement immobilier et des technologies telles que l'apprentissage automatique pour garantir des estimations 
+    fiables dans toutes les communes françaises. Cette filiale du groupe Kinaxia collecte des données auprès de différentes 
+    sources pour fournir des rapports d'estimation complets. CityScan facilite l'évaluation immobilière et offre des 
+    résultats précis en un temps record. Disponible en version gratuite ou payante, elle bénéficie aux acteurs de la 
+    transaction immobilière ainsi qu'aux gestionnaires de patrimoine, notaires et promoteurs.
+    
+url: https://www.cityscan.fr/
+backlink:
+
+links:
+  - target_key: groupe_kinaxia
+    begin_in: 2017
+    description: Appartient au groupe Kinaxia
