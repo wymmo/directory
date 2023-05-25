@@ -1,0 +1,20 @@
+name: Dili
+title: Dili
+tags: ["ibuying"]
+created_in: 2018
+description:
+  - |
+    Dili, une filiale du groupe immobilier Digit RE, est une nouvelle marque lancée en 2018. Elle offre 
+    une solution alternative à la vente immobilière traditionnelle en combinant expertise immobilière et 
+    outils numériques. Son objectif est de raccourcir les délais de vente en proposant une offre d'achat 
+    ferme et rapide aux propriétaires. Avec Dili, les propriétaires peuvent vendre leur bien en quelques 
+    jours, sans effort ni travaux, et bénéficier d'une garantie d'hébergement en cas de retard de la vente.
+
+url: https://www.dili.fr/
+backlink:
+
+links:
+  - target_key: groupe_digitre 
+    begin_in: 2018
+    description: Rejoint le Groupe Digit RE 
+

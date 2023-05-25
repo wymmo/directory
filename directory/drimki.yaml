@@ -1,0 +1,24 @@
+name: Drimki
+title: Drimki
+tags: ["estimation"]
+created_in: 2007
+description:
+  - |
+    Drimki, créé en 2007, est le pionnier français de l'estimation immobilière en ligne. 
+    Grâce à son moteur d'estimation, les propriétaires peuvent obtenir gratuitement et rapidement 
+    une fourchette de prix pour leur bien immobilier. Toutefois, Drimki souligne l'importance de 
+    l'expertise d'un agent local et propose la mise en relation avec un conseiller agréé pour affiner 
+    l'estimation. Le site propose également une rubrique dédiée aux prix immobiliers par mètre carré, 
+    offrant des informations sur la valeur des maisons et des appartements dans une zone donnée. Une carte 
+    interactive des prix et des données socio-démographiques sont également disponibles. Drimki se distingue 
+    des autres réseaux de mandataires par son approche axée sur les services innovants en ligne, ayant investi 
+    dans des outils performants avant de développer son réseau.
+
+url: https://www.drimki.fr/
+backlink:
+
+links:
+  - target_key: groupe_digitre 
+    begin_in: 2016
+    description: Rejoint le Groupe Digit RE 
+

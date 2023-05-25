@@ -1,0 +1,21 @@
+name: Immobilier-Neuf
+title: Immobilier-Neuf
+tags: ["portail"]
+created_in: 2007
+description:
+  - |
+    Immobilier-Neuf est un acteur de référence de la commercialisation en ligne de l'immobilier neuf en France. 
+    Avec plus de 30 000 appartements neufs issus de 2 000 programmes immobiliers, Immobilier-Neuf propose 
+    des logements à prix direct promoteur grâce à ses partenariats avec plus de 300 promoteurs. La plate-forme 
+    est reconnue comme un acteur majeur de l'immobilier neuf sur Internet, couvrant à la fois le marché régional 
+    et national. Depuis son intégration au sein du groupe Digit RE en tant que filiale du Groupe Artémis, 
+    Immobilier-Neuf poursuit une stratégie de développement national de sa plateforme de distribution d'immobilier.
+
+url: https://www.immobilier-neuf.com/
+backlink:
+
+links:
+  - target_key: groupe_digitre 
+    begin_in: 2016
+    description: Rejoint le Groupe Digit RE 
+

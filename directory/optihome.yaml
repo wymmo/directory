@@ -1,0 +1,20 @@
+name: Optimhome
+title: Optimhome
+tags: ["reseau_mandataire"]
+created_in: 2006
+description:
+  - |
+    Optimhome est un réseau immobilier européen de 2 200 conseillers immobiliers en France et en Europe. 
+    Fondé en 2006, il se distingue par son concept novateur "sans boutique", remplaçant les agences physiques 
+    par une présence en ligne. Grâce à une diffusion efficace des biens sur les portails d'annonces et à des 
+    innovations digitales régulières, Optimhome offre une relation de confiance et de proximité avec ses clients. 
+    Le réseau est reconnu comme l'un des leaders du marché de la transaction immobilière en France.
+
+url: https://www.optimhome.com/
+backlink:
+
+links:
+  - target_key: groupe_digitre 
+    begin_in: 2016
+    description: Rejoint le Groupe Digit RE 
+

@@ -1,0 +1,21 @@
+name: Capifrance
+title: Capifrance
+tags: ["reseau_mandataire"]
+created_in: 2002
+description:
+  - |
+    Capifrance est le premier réseau de conseillers immobiliers indépendants en France, créé en 2002. 
+    Avec environ 3 000 conseillers répartis sur tout le territoire français, Capifrance propose des services 
+    immobiliers en ligne, sans agence physique. Les conseillers travaillent depuis leur 
+    domicile grâce à des plateformes virtuelles. Le réseau couvre tous les domaines de la transaction immobilière, 
+    de la vente de biens neufs ou anciens à la location. Capifrance met l'accent sur le partage, la disponibilité et 
+    la confiance, offrant un accompagnement personnalisé à ses clients. 
+
+url: https://www.capifrance.fr/
+backlink:
+
+links:
+  - target_key: groupe_digitre 
+    begin_in: 2016
+    description: Rejoint le Groupe Digit RE 
+

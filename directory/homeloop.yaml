@@ -1,0 +1,22 @@
+name: Homeloop
+title: Homeloop
+tags: ["ibuying"]
+created_in: 2016
+description:
+  - |
+    Homeloop est une start-up spécialisée dans l'achat immobilier instantané. Elle propose une solution 
+    novatrice pour vendre rapidement et en toute sécurité des biens immobiliers. Grâce à des méthodes 
+    d'évaluation, de visite et de signature notariale digitalisées, Homeloop offre une offre d'achat 
+    sécurisée et instantanée, un compromis de vente en une semaine et une transaction finalisée en seulement 
+    70 jours. Cette approche se présente comme une alternative attrayante au prêt relais traditionnel. Fondée 
+    en 2016, Homeloop compte actuellement une soixantaine de collaborateurs et opère 
+    dans plusieurs grandes villes françaises. 
+
+url: https://www.homeloop.fr/
+backlink:
+
+links:
+  - target_key: groupe_benedic
+    begin_in: 2022
+    description: Rejoint le Groupe Benedic
+
