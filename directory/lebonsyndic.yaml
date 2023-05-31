@@ -1,0 +1,20 @@
+name: Le Bon Syndic
+title: Le Bon Syndic
+tags: ["syndic"]
+created_in: 2013
+description:
+  - |
+    Le Bon Syndic est un service en ligne lancé en 2013 pour la gestion transparente et économique des 
+    petites copropriétés. Avec des tarifs avantageux, il permet aux copropriétaires d'accéder facilement 
+    à tous les éléments nécessaires à la bonne gestion de leur immeuble. Le site prévoit également des services 
+    de conseils juridiques et techniques, ainsi qu'une future option d'assemblée générale en ligne. Depuis 2023, 
+    le groupe Sergic a fait l'acquisition du service Le Bon Syndic, anciennement détenu par le groupe Emeria 
+    (ex Groupe Foncia).
+
+url: https://www.lebonsyndic.com/
+backlink:
+
+links:
+  - target_key: groupe_sergic
+    begin_in: 2023
+    description: Rejoint le groupe Sergic

@@ -1,0 +1,20 @@
+name: Côté Particuliers
+title: Côté Particuliers
+tags: ["reseau_agence"]
+created_in: 2008
+description:
+  - |
+    Côté Particuliers est un réseau d'agences immobilières de proximité fondé en 2008. Avec plus de 120 
+    agences en France, l'enseigne se distingue par son approche axée sur la proximité, la transparence et 
+    des honoraires ajustés. Elle propose une expérience immobilière juste et met l'accent sur la valorisation 
+    des biens, les services affûtés et les frais d'agence réduits. Grâce à son contrat de licence de marque 
+    flexible, les franchisés bénéficient d'un accompagnement et d'une méthode éprouvée depuis 2008, tout en 
+    conservant 100% de leur chiffre d'affaires.
+
+url: https://www.coteparticuliers.com/
+backlink:
+
+links:
+  - target_key: human_immobilier
+    begin_in: 2022
+    description: Rejoint le groupe Human Immobilier

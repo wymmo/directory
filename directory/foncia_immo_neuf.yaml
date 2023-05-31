@@ -1,0 +1,20 @@
+name: Foncia Immo Neuf
+title: Foncia Immo Neuf
+tags: ["gestion_locative"]
+created_in: 1996
+description:
+  - |
+    Foncia Immo Neuf, filiale spécialisée dans l'immobilier neuf du groupe Foncia, accompagne les acteurs de 
+    la promotion et de la commercialisation dans leurs besoins en administration de biens, estimation des loyers 
+    et analyse des marchés. L'entreprise se divise en cinq pôles spécialisés et établit des partenariats pour 
+    offrir des solutions complètes et sécurisées aux clients souhaitant investir dans un bien immobilier neuf. 
+    Foncia Immo Neuf suit les évolutions des modes de vie et des habitats pour répondre aux nouvelles attentes 
+    des futurs résidents.
+
+url: https://fr.foncia.com/notre-ambition/investissement-locatif-neuf
+backlink:
+
+links:
+  - target_key: foncia
+    begin_in: 1996
+    description: Filiale du groupe Foncia
