@@ -1,0 +1,19 @@
+name: Empruntis
+title: Empruntis
+tags: ["courtier" , "assurance"]
+created_in: 2000
+description:
+  - |
+    Empruntis est un site spécialisé dans l'accompagnement des particuliers dans leur recherche de 
+    financement, d'assurance et de défiscalisation. Fondé en 2000, Empruntis offre une gamme complète 
+    de services, allant du prêt à la consommation au prêt immobilier, en passant par l'assurance emprunteur 
+    et le rachat de crédits. Avec plus de 150 agences en France et une centaine de partenaires bancaires, 
+    Empruntis propose une expertise reconnue et un accompagnement sur mesure pour la réalisation des projets financiers.
+
+url: https://www.empruntis.com/
+backlink:
+
+links:
+  - target_key: groupe_pretalis
+    begin_in: 2015
+    description: Filiale du groupe Pretalis

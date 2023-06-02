@@ -1,6 +1,6 @@
 name: API Financement
 title: API Financement
-tags: ["courtier_immobilier", "assurance_immobilier"]
+tags: ["courtier", "assurance"]
 created_in: 2018
 description:
   - |
@@ -13,11 +13,7 @@ description:
     Elle est spécialisée dans les prêts immobiliers pour l'acquisition, la construction, 
     les travaux et les renégociations, ainsi que dans les prêts copropriétés pour les travaux d'entretien, 
     la rénovation et l'accompagnement à la transition énergétique. 
-  
     
- 
-
-
 url: https://www.api-financement.net
 backlink:
 
