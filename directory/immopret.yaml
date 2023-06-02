@@ -1,0 +1,21 @@
+name: Immoprêt
+title: Immoprêt
+tags: ["courtier"]
+created_in: 2006
+description:
+  - |
+    Immoprêt est un courtier en crédit immobilier créé en 2006zz. Avec plus de 
+    300 collaborateurs répartis dans plus d'une centaine d'agences en France, Immoprêt accompagne 
+    les particuliers dans leur recherche de financement immobilier. Les conseillers d'Immoprêt offrent 
+    un service de proximité, étudiant le budget des clients en une heure et fournissant une réponse immédiate. 
+    Ils prennent ensuite en charge la constitution du dossier en personnalisant l'approche et en proposant les 
+    meilleures solutions de financement adaptées aux besoins des clients. Immoprêt travaille avec plus de 80 
+    partenaires bancaires pour offrir une large gamme d'offres de financement.
+
+url: https://www.immopret.fr/
+backlink:
+
+links:
+  - target_key: groupe_pretalis
+    begin_in: 2016
+    description: Filiale du groupe Pretalis
