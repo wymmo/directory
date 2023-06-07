@@ -1,6 +1,6 @@
 name: Nexity
 title: Nexity
-tags: ["reseau_agence"]
+tags: ["promotion" , "reseau_agence"]
 created_in: 2000
 description:
   - |
@@ -14,13 +14,8 @@ description:
   - |
     Chiffres clés (2021) :
   - |
-    • +250 agences en France ;
-    • +8 300 collaborateurs.
+    • +250 agences en France
+    • +8 300 collaborateurs
 
 url: https://www.nexity.fr
 backlink:
-
-links:
-  - target_key: fnaim
-    begin_in: 2015
-    description: Partenaire de la FNAIM
