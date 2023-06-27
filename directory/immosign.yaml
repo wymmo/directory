@@ -1,0 +1,21 @@
+name: ImmoSign
+title: ImmoSign
+tags: ["signature_electronique"]
+created_in: 2018
+description:
+  - |
+    ImmoSign est un spécialiste de la digitalisation contractuelle pour l'immobilier. Sa solution propose 
+    la rédaction assistée, la signature électronique, le recueil des mentions manuscrites et l'envoi en recommandé 
+    électronique. Cette solution permet de gagner en efficacité, de simplifier les tâches administratives et de 
+    valoriser les services des professionnels de l'immobilier. ImmoSign se distingue par son positionnement spécifique, 
+    son accompagnement personnalisé et sa stratégie d'Inbound Marketing. L'entreprise normande ImmoSign a récemment 
+    accueilli deux nouveaux investisseurs, Arche et La Boîte Immo, dans son actionnariat.
+
+links:
+  - target_key: groupe_arche
+    begin_in: 2023
+    description: Rejoint le groupe Arche
+
+url: https://immo-sign.com/
+backlink:
+
