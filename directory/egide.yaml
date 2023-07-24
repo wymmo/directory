@@ -1,9 +1,8 @@
 name: Egide
-title: Egide 
+title: Egide
 tags: ["logiciel_gestion_agence"]
 created_in: 1986
 description:
-
   - |
     Egide est une entreprise qui propose des solutions innovantes pour le secteur de la 
     gestion immobilière, avec une approche globale et coopérative. Elle couvre une large gamme de 
@@ -13,14 +12,13 @@ description:
     des technologies de l'information, Egide déploie des solutions intégrant des fonctionnalités 
     à forte valeur ajoutée telles que la dématérialisation, la communication et la gestion de l'information 
     avec les collaborateurs, les clients et les partenaires.
-  - |   
+  - |
 
 links:
-  - target_key: groupe_dl_software 
+  - target_key: groupe_dl_software
     begin_in: 2019
-    description: Rejoint le Groupe DL Software  
+    description: Rejoint le Groupe DL Software
 
 url: https://www.egide.net/
+icon: egide.png
 backlink:
-
-
