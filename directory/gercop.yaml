@@ -3,20 +3,18 @@ title: Gercop
 tags: ["logiciel_gestion_agence"]
 created_in: 1988
 description:
-
   - |
     Depuis plus de 40 ans, Gercop est un prestataire de services informatiques et de solutions Internet 
     dédié aux professionnels de l’immobilier, tels que les administrateurs de biens et les agents immobiliers. 
     La société propose une large gamme de solutions innovantes, allant de la gérance à la copropriété, en 
     passant par la transaction, la paie, la comptabilité, les sites Internet, le webmarketing et la marketplace 
-    multi-services.  
+    multi-services.
 
 links:
-  - target_key: groupe_dl_software 
+  - target_key: groupe_dl_software
     begin_in: 2021
-    description: Rejoint le Groupe DL Software  
+    description: Rejoint le Groupe DL Software
 
 url: https://gercop.com/
+icon: gercop.svg
 backlink:
-
-
