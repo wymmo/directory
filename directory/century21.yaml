@@ -1,9 +1,8 @@
 name: Century 21
 title: Century 21
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 1972
 description:
-
   - |
     Century 21 est une entreprise américaine née en Californie en 1972 et spécialisée dans la vente, l'achat et la location de biens immobiliers. 
     Il faut attendre 1987 pour que Century 21 s'implante en France. Fort de sa croissance, le groupe est racheté par
@@ -21,4 +20,5 @@ description:
     • +70 000 biens à la vente ou à la location
 
 url: https://www.century21.com
+icon: century21.png
 backlink:

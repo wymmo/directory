@@ -1,6 +1,6 @@
 name: Citya
 title: Citya
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 1990
 description:
   - |
@@ -19,7 +19,8 @@ description:
     • 4500 collaborateurs en France
     • 200 000 biens gérés +55 000 biens à la vente/location
 
-url: 	https://www.citya.com
+url: https://www.citya.com
+icon: citya.png
 backlink:
 
 links:

@@ -1,6 +1,6 @@
 name: Stéphane Plaza
 title: Stéphane Plaza Immobilier
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 2014
 description:
   - |
@@ -16,4 +16,4 @@ backlink:
 
 events:
   - happened_in: 2015
-    description: Ouverture à la franchise. 
+    description: Ouverture à la franchise.

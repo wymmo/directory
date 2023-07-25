@@ -11,10 +11,10 @@ description:
     jours, sans effort ni travaux, et bénéficier d'une garantie d'hébergement en cas de retard de la vente.
 
 url: https://www.dili.fr/
+icon: dili.png
 backlink:
 
 links:
-  - target_key: groupe_digitre 
+  - target_key: groupe_digitre
     begin_in: 2018
-    description: Rejoint le Groupe Digit RE 
-
+    description: Rejoint le Groupe Digit RE

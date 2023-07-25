@@ -1,6 +1,6 @@
 name: Clustdoc
 title: Clustdoc
-tags: ["signature_electronique" , "juridique"]
+tags: ["signature_electronique", "juridique"]
 created_in: 2018
 description:
   - |
@@ -12,7 +12,7 @@ description:
     des informations, de collecter les pièces justificatives, d'effectuer des relances automatisées et d'échanger 
     avec les clients sur une plateforme sécurisée. Clustdoc s'adresse aux métiers de la location et de la gestion, 
     mais également aux professionnels impliqués dans la préparation d'un compromis.
-    
-url: https://clustdoc.com/
-backlink:
 
+url: https://clustdoc.com/
+icon: clust.png
+backlink:

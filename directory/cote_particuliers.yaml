@@ -1,6 +1,6 @@
 name: Côté Particuliers
 title: Côté Particuliers
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 2008
 description:
   - |
@@ -12,6 +12,7 @@ description:
     conservant 100% de leur chiffre d'affaires.
 
 url: https://www.coteparticuliers.com/
+icon: "cote_particuliers.png"
 backlink:
 
 links:

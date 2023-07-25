@@ -1,6 +1,6 @@
 name: Keller Williams
 title: Keller Williams
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 1983
 description:
   - |
@@ -11,5 +11,5 @@ description:
     une force de frappe considérable, avec de nombreux clients acquéreurs et une vaste sélection de 
     biens immobiliers disponibles.
 
-url: 	https://kwfrance.com/
+url: https://kwfrance.com/
 backlink:

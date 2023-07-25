@@ -15,10 +15,10 @@ description:
     dans des outils performants avant de développer son réseau.
 
 url: https://www.drimki.fr/
+icon: drimki.png
 backlink:
 
 links:
-  - target_key: groupe_digitre 
+  - target_key: groupe_digitre
     begin_in: 2016
-    description: Rejoint le Groupe Digit RE 
-
+    description: Rejoint le Groupe Digit RE

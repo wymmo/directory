@@ -2,12 +2,13 @@ name: Superimmo
 title: Superimmo
 tags: ["portail"]
 created_in: 2012
-icon: superimmo.png
 description:
   - |
     Superimmo est un site d'annonces immobilières de vente ou location sur le territoire français. 
     En diffusant gratuitement des annonces réservées aux professionnels de l'immobilier, le site comptabilise plus de 
-    600 000 annonces immobilières avec 12 000 agences qui ont leur confiance pour la diffusion des biens. Par ailleurs, Superimmo se diversifie via SuperimmoNeuf spécialisé sur les programmes et constructions de biens neufs.
+    600 000 annonces immobilières avec 12 000 agences qui ont leur confiance pour la diffusion des biens. 
+    Par ailleurs, Superimmo se diversifie via SuperimmoNeuf spécialisé sur les programmes et constructions de biens neufs.
 
 url: https://www.superimmo.com
+icon: superimmo.png
 backlink:

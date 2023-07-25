@@ -1,6 +1,6 @@
 name: Empruntis
 title: Empruntis
-tags: ["courtier" , "assurance"]
+tags: ["courtier", "assurance"]
 created_in: 2000
 description:
   - |
@@ -11,6 +11,7 @@ description:
     Empruntis propose une expertise reconnue et un accompagnement sur mesure pour la réalisation des projets financiers.
 
 url: https://www.empruntis.com/
+icon: "empruntis.svg"
 backlink:
 
 links:

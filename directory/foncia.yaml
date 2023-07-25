@@ -1,6 +1,6 @@
 name: Foncia
 title: Foncia
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 1972
 description:
   - |
@@ -14,7 +14,6 @@ description:
     • 20 000 transactions & 22 000 locations réalisées
     • 10 000 copropriétés & 400 000 biens en location gérés
   - |
-
 
 url: https://fr.foncia.com
 backlink:

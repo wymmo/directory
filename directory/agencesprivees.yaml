@@ -1,6 +1,6 @@
 name: Agences Privées
 title: Agences Privées
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 2012
 description:
   - |
@@ -15,4 +15,5 @@ description:
     • 1 671 annonces de location
 
 url: https://www.agencesprivees.com
+icon: "agencesprivees.png"
 backlink:

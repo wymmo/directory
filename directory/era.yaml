@@ -1,6 +1,6 @@
 name: ERA Immobilier
 title: ERA Immobilier
-tags: ["reseau_agence"]
+tags: ["reseau_agences"]
 created_in: 1993
 description:
   - |
@@ -15,4 +15,5 @@ description:
     • +35 000 transactions
 
 url: https://www.erafrance.com
+icon: era.ico
 backlink:
