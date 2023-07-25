@@ -1,6 +1,6 @@
 name: La Loupe Immo
 title: La Loupe Immo
-tags: ["portail" , "estimation"]
+tags: ["portail", "estimation"]
 created_in: 2019
 
 description:
@@ -16,4 +16,5 @@ description:
     et être plus efficaces dans leur prospection grâce à une analyse de données facilitée.
 
 url: https://la-loupe.immo/
+icon: laloupeimmo.ico
 backlink:

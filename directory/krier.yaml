@@ -1,6 +1,6 @@
 name: Krier
 title: Krier
-tags: ["suite_de_logiciel" , "gestion_locative" , "syndic"]
+tags: ["suite_de_logiciel", "gestion_locative", "syndic"]
 created_in: 1989
 description:
   - |
@@ -14,6 +14,7 @@ description:
     digitales et une évolution de leur identité visuelle.
 
 url: https://www.krier.fr/
+icon: krier.png
 backlink:
 
 links:
