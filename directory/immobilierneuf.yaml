@@ -12,10 +12,10 @@ description:
     Immobilier-Neuf poursuit une stratégie de développement national de sa plateforme de distribution d'immobilier.
 
 url: https://www.immobilier-neuf.com/
+icon: immobilierneuf.png
 backlink:
 
 links:
-  - target_key: groupe_digitre 
+  - target_key: groupe_digitre
     begin_in: 2016
-    description: Rejoint le Groupe Digit RE 
-
+    description: Rejoint le Groupe Digit RE

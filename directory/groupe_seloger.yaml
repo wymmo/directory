@@ -8,8 +8,8 @@ description:
     d'annonces immobilières ainsi que des magazines spécialisés. Créé en 1989 avec le lancement du portail 
     sur Minitel appelé « 3615 Seloger », le groupe s'est diversifié au fil des ans et compte aujourd'hui 
     plusieurs marques spécialisées dans différents domaines de l'immobilier, tels que l'ancien, le luxe, 
-    le neuf, les bureaux et commerces, la construction et la location de vacances. 
-  - |    
+    le neuf, les bureaux et commerces, la construction et la location de vacances.
+  - |
     Le Groupe SeLoger a été créé en 2019 dans le but de regrouper ses 11 marques spécialisées 
     dans différents domaines de l'immobilier sous une même structure unique. Cette consolidation 
     permet de mieux structurer l'offre de l'entreprise et de faciliter l'harmonisation de ses services pour les clients.
@@ -19,6 +19,6 @@ description:
     et Commerces, SeLoger Construire, Logic-Immo Faire Construire, SeLoger Vacances, Vacances.com, Amivac et plus 
     récemment Meilleursagents.
 
-
 url: https://www.groupeseloger.com
+icon: groupe_seloger.png
 backlink:

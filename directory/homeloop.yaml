@@ -10,13 +10,13 @@ description:
     sécurisée et instantanée, un compromis de vente en une semaine et une transaction finalisée en seulement 
     70 jours. Cette approche se présente comme une alternative attrayante au prêt relais traditionnel. Fondée 
     en 2016, Homeloop compte actuellement une soixantaine de collaborateurs et opère 
-    dans plusieurs grandes villes françaises. 
+    dans plusieurs grandes villes françaises.
 
 url: https://www.homeloop.fr/
+icon: homeloop.png
 backlink:
 
 links:
   - target_key: groupe_benedic
     begin_in: 2022
     description: Rejoint le Groupe Benedic
-

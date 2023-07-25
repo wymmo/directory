@@ -1,6 +1,6 @@
 name: H2i
 title: H2i
-tags: ["suite_de_logiciel" , "administrateur_de_bien"]
+tags: ["suite_de_logiciel", "administrateur_de_bien"]
 created_in: 1992
 description:
   - |
@@ -13,6 +13,7 @@ description:
     expertise du secteur immobilier.
 
 url: https://www.h2i.fr/
+icon: h2i.svg
 backlink:
 
 links:
