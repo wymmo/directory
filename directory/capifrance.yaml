@@ -9,13 +9,13 @@ description:
     immobiliers en ligne, sans agence physique. Les conseillers travaillent depuis leur 
     domicile grâce à des plateformes virtuelles. Le réseau couvre tous les domaines de la transaction immobilière, 
     de la vente de biens neufs ou anciens à la location. Capifrance met l'accent sur le partage, la disponibilité et 
-    la confiance, offrant un accompagnement personnalisé à ses clients. 
+    la confiance, offrant un accompagnement personnalisé à ses clients.
 
 url: https://www.capifrance.fr/
+icon: capifrance.png
 backlink:
 
 links:
-  - target_key: groupe_digitre 
+  - target_key: groupe_digitre
     begin_in: 2016
-    description: Rejoint le Groupe Digit RE 
-
+    description: Rejoint le Groupe Digit RE

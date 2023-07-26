@@ -11,10 +11,10 @@ description:
     Le réseau est reconnu comme l'un des leaders du marché de la transaction immobilière en France.
 
 url: https://www.optimhome.com/
+icon: optimhome.png
 backlink:
 
 links:
-  - target_key: groupe_digitre 
+  - target_key: groupe_digitre
     begin_in: 2016
-    description: Rejoint le Groupe Digit RE 
-
+    description: Rejoint le Groupe Digit RE
