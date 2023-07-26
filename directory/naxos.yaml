@@ -3,13 +3,12 @@ title: Naxos
 tags: ["logiciel_gestion_agence"]
 created_in: 1993
 description:
-
   - |
     Naxos est le logiciel immobilier spécialisés pour les agences franchisés de Century 21. Ce solutionneur innovant 
     propose entre autre, des services d'édition logiciel CRM et des formations et référencement SEO/SEA/SMO pour le compte des 
     agents immobiliers afin de satisfaire les clients de leur agence. 
 
-    Le logiciels de solutions applicatifs a rejoint les rangs de Arche en 2021. 
+    Le logiciels de solutions applicatifs a rejoint les rangs de Arche en 2021.
 
   - |
     Chiffres clés (2023) :
@@ -20,6 +19,7 @@ description:
     • +7% traffic sur les sites d'agence
 
 url: https://www.naxos.fr
+icon: naxos.png
 backlink:
 
 links:
