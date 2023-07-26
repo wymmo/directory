@@ -4,14 +4,15 @@ tags: ["logiciel_gestion_agence"]
 created_in: 2008
 description:
   - |
-      WinImmobilier est un logiciel de transactions immobilières qui offre aux professionnels de 
-      l'immobilier la gestion complète de l'activité des 
-      agences immobilières, y compris la diffusion des annonces sur des sites web spécialisés et 
-      la gestion des acheteurs et des mandats immobiliers. En plus de ses fonctionnalités de gestion, 
-      le logiciel permet d'éditer des documents personnalisables tels que des courriers et des affiches 
-      vitrines. WinImmobilier a été lancé en 2008 par Consulog, une entreprise spécialisée dans les 
-      logiciels métier. Depuis lors, il a évolué pour inclure une version web et une application mobile, 
-      ainsi que de nouvelles fonctionnalités en 2020.
-    
+    WinImmobilier est un logiciel de transactions immobilières qui offre aux professionnels de 
+    l'immobilier la gestion complète de l'activité des 
+    agences immobilières, y compris la diffusion des annonces sur des sites web spécialisés et 
+    la gestion des acheteurs et des mandats immobiliers. En plus de ses fonctionnalités de gestion, 
+    le logiciel permet d'éditer des documents personnalisables tels que des courriers et des affiches 
+    vitrines. WinImmobilier a été lancé en 2008 par Consulog, une entreprise spécialisée dans les 
+    logiciels métier. Depuis lors, il a évolué pour inclure une version web et une application mobile, 
+    ainsi que de nouvelles fonctionnalités en 2020.
+
 url: https://www.winimmobilier.com/
+icon: winimmobilier.png
 backlink:

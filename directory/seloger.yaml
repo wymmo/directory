@@ -7,12 +7,13 @@ description:
     Seloger est un portail immobilier généraliste qui a été fondé en 1996, qui 
     offre une gamme de services liés à l'immobilier. Toutefois, l'histoire de 
     la société remonte à 1989 avec la mise en place d'un minitel appelé "3615 Seloger". En 1995, la société 
-    s'est lancée dans la presse immobilière spécialisée avant de créer le site internet Seloger.com en 1996. 
-  - |    
+    s'est lancée dans la presse immobilière spécialisée avant de créer le site internet Seloger.com en 1996.
+  - |
     Depuis, la société s'est diversifiée et est devenue un groupe, qui depuis 2011, 
     est désormais propriété du groupe allemand Axel Springer.
 
 url: https://www.seloger.com
+icon: seloger.ico
 backlink:
 
 links:
