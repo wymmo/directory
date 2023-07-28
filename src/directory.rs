@@ -58,6 +58,8 @@ pub struct Item {
   pub url: url::Url,
   pub backlink: Option<url::Url>,
   pub icon: Option<Cow<'static, str>>,
+  #[serde(default)]
+  pub no_icon: bool,
 
   #[serde(default)]
   pub links: Vec<DirectoryLink>,
@@ -332,6 +334,7 @@ mod tests {
         url: "https://wymmo.com".parse()?,
         backlink: None,
         icon: None,
+        no_icon: true,
         links: vec![],
         events: vec![],
       },
@@ -349,6 +352,7 @@ mod tests {
         url: "https://wymmo.com".parse()?,
         backlink: None,
         icon: None,
+        no_icon: false,
         links: vec![DirectoryLink {
           target_key: "wymmo".into(),
           begin_in: 2026,

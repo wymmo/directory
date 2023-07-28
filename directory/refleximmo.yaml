@@ -2,15 +2,17 @@ name: Refleximmo
 title: Refleximmo
 tags: ["reseau_mandataire"]
 created_in: 2007
+concluded_in: 2016
 description:
   - |
     Refleximmo est un réseau de conseillers indépendants, crée en 2007 et intégré en 2016 
-    dans le groupe Digit RE (centrale des marques immobilières d'Artémis). 
+    dans le groupe Digit RE (centrale des marques immobilières d'Artémis).
 
 url: http://www.refleximmo.com/
+icon: refleximmo.png
 backlink:
 
 links:
-  - target_key: groupe_digitre 
+  - target_key: groupe_digitre
     begin_in: 2016
-    description: Rejoint le Groupe Digit RE 
+    description: Rejoint le Groupe Digit RE

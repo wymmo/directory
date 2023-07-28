@@ -2,10 +2,14 @@ name: Pygoo
 title: Pygoo
 tags: ["pige"]
 created_in: 2020
+concluded_in: 2021
+
 description:
   - |
-    Pygoo est un logiciel de pige immobilière qui offre une solution d'alertes immobilières pour les agents et les mandataires immobiliers. Grâce à Pygoo, les professionnels de l'immobilier peuvent créer des alertes personnalisées et recevoir des notifications directement dans leur boîte mail dès que de nouveaux biens sont mis en ligne sur des plateformes populaires. Avec son outil basé sur l'intelligence artificielle, l'outil trie et envoie les annonces pertinentes, permettant aux professionnels de gagner du temps et de rester en avance sur la concurrence. 
+    Pygoo est un logiciel de pige immobilière qui offre une solution d'alertes immobilières pour les agents et les mandataires immobiliers. 
+    Grâce à Pygoo, les professionnels de l'immobilier peuvent créer des alertes personnalisées et recevoir des notifications directement dans leur boîte mail dès que de nouveaux biens sont mis en ligne sur des plateformes populaires. 
+    Avec son outil basé sur l'intelligence artificielle, l'outil trie et envoie les annonces pertinentes, permettant aux professionnels de gagner du temps et de rester en avance sur la concurrence.
 
 url: https://www.pygoo.fr/
+no_icon: true
 backlink:
-

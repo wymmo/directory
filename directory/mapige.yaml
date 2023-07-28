@@ -2,10 +2,12 @@ name: Mapige
 title: Mapige
 tags: ["pige"]
 created_in: 2016
+concluded_in: 2020
 description:
   - |
     Mapige est l'application incontournable pour les professionnels de l'immobilier à la recherche d'une solution pour leur pige et leurs estimations. 
     Avec sa vaste gamme de fonctionnalités, Mapige répond aux besoins essentiels du marché immobilier. L'application permet aux utilisateurs d'être les premiers informés des nouvelles annonces immobilières et de connaître les prix au mètre carré dans leur zone de chalandise. Grâce à des rapports automatiques basés sur des biens comparables, Mapige simplifie le processus d'estimation immobilière. Cet outil puissant offre une automatisation efficace pour augmenter les ventes et maximiser les performances des professionnels de l'immobilier.
 
 url: http://mapige.immo/
+no_icon: true
 backlink:
