@@ -9,3 +9,8 @@ description:
 url: https://www.marketing-immo.fr/
 icon: marketingimmobilier.png
 backlink:
+
+links:
+  - target_key: groupe_realty
+    begin_in: 2023
+    description: Appartient au Groupe Realty

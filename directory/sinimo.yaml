@@ -14,3 +14,8 @@ description:
 url: https://sinimo.fr/
 icon: sinimo.svg
 backlink:
+
+links:
+  - target_key: groupe_realty
+    begin_in: 2023
+    description: Appartient au Groupe Realty

@@ -1,0 +1,16 @@
+name: MonBien
+title: MonBien
+tags: ["portail"]
+created_in: 2016
+description:
+  - |
+    Fondée en 2016, Monbien est une société spécialisée dans l'immobilier qui offre une plateforme ouverte tant aux professionnels qu'aux particuliers. La diffusion des annonces est gratuite et sans limite pour tous les utilisateurs. Les agents et promoteurs ont également la possibilité de souscrire à un abonnement mensuel, leur permettant d'accéder à des statistiques, de recevoir des demandes d'estimations et de publier des offres d'emploi. Pour une version premium, les annonces sont mises en avant dans les résultats et remontent quotidiennement en tête de liste, offrant ainsi une visibilité accrue.
+
+url: https://www.monbien.fr/
+backlink:
+
+links:
+  - target_key: groupe_realty
+    begin_in: 2023
+    description: Appartient au Groupe Realty
+

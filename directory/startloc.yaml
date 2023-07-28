@@ -1,0 +1,15 @@
+name: Startloc
+title: Startloc
+tags: ["etat_des_lieux"]
+created_in: 2019
+description:
+  - |
+    Startloc, édité par Bexter, est un logiciel immobilier de transactions 100% web permettant de réaliser et envoyer des états des lieux dématérialisés. Avec son application, Startloc répond aux besoins des professionnels de l'immobilier en offrant une gestion efficace des états des lieux. Grâce à des fonctionnalités telles que la duplication des états des lieux, les photos pour réduire les litiges, et la signature électronique sécurisée, les utilisateurs bénéficient d'un gain de temps considérable. 
+
+url: https://startloc.fr/
+backlink:
+
+links:
+  - target_key: groupe_realty
+    begin_in: 2023
+    description: Appartient au Groupe Realty

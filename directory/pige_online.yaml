@@ -11,6 +11,6 @@ icon: pige_online.png
 backlink:
 
 links:
-  - target_key: marketingimmobilier
-    begin_in: 2013
-    description: Appartient à Marketing Immobilier
+  - target_key: groupe_realty
+    begin_in: 2023
+    description: Appartient au Groupe Realty
