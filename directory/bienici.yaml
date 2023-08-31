@@ -19,6 +19,19 @@ icon: bienici.png
 backlink:
 
 links:
+  - target_key: nexity
+    begin_in: 2015
+    description: Nexity, membre fondateur de Bien'ici
+  - target_key: fnaim
+    begin_in: 2015
+    description: FNAIM, membre fondateur de Bien'ici
+  - target_key: unis
+    begin_in: 2015
+    description: UNIS, membre fondateur de Bien'ici
+  - target_key: snpi
+    begin_in: 2015
+    description: SNPI, membre fondateur de Bien'ici
+
   - target_key: groupe_arche
     begin_in: 2017
     description: Rejoint le groupe Arche
