@@ -12,6 +12,7 @@ description:
 
 url: https://www.sphere-immo.com
 icon: sphere_immo_neuf.png
+resize_icon: true
 backlink:
 
 links:

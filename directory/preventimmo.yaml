@@ -14,6 +14,7 @@ description:
 
 url: https://www.preventimmo.fr/
 icon: preventimmo.png
+resize_icon: true
 backlink:
 
 links:

@@ -12,6 +12,7 @@ description:
 
 url: https://www.optimhome.com/
 icon: optimhome.png
+resize_icon: true
 backlink:
 
 links:

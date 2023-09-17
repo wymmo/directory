@@ -20,6 +20,7 @@ description:
 
 url: https://www.naxos.fr
 icon: naxos.png
+resize_icon: true
 backlink:
 
 links:

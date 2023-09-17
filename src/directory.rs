@@ -42,7 +42,10 @@ pub struct Tag {
   pub title: Cow<'static, str>,
   pub description: Vec<Cow<'static, str>>,
   pub color: Option<Cow<'static, str>>,
+
   pub icon: Option<Cow<'static, str>>,
+  #[serde(default)]
+  pub resize_icon: bool,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq, Validate)]
@@ -57,7 +60,10 @@ pub struct Item {
   pub description: Vec<Cow<'static, str>>,
   pub url: url::Url,
   pub backlink: Option<url::Url>,
+
   pub icon: Option<Cow<'static, str>>,
+  #[serde(default)]
+  pub resize_icon: bool,
   #[serde(default)]
   pub no_icon: bool,
 
@@ -334,6 +340,7 @@ mod tests {
         url: "https://wymmo.com".parse()?,
         backlink: None,
         icon: None,
+        resize_icon: false,
         no_icon: true,
         links: vec![],
         events: vec![],
@@ -352,6 +359,7 @@ mod tests {
         url: "https://wymmo.com".parse()?,
         backlink: None,
         icon: None,
+        resize_icon: false,
         no_icon: false,
         links: vec![DirectoryLink {
           target_key: "wymmo".into(),
@@ -370,6 +378,7 @@ mod tests {
         description: vec!["Le B2B,".into(), "c'est la vie".into()],
         color: None,
         icon: None,
+        resize_icon: false,
       },
     );
 
@@ -380,22 +389,29 @@ mod tests {
     wrong_directory.tags.entry("b2b".into()).and_modify(|x| {
       x.description = vec![];
     });
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     // empty tag description is forbidden
     let mut wrong_directory = directory.clone();
     wrong_directory.items.entry("wymmo".into()).and_modify(|x| {
       x.description = vec![];
     });
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     // adds a tag with the same key than an item
     let mut wrong_directory = directory.clone();
     wrong_directory.tags.insert(
       "wymmo".into(),
-      Tag { key: "wymmo".into(), title: "Wymmo".into(), description: vec!["description".into()], color: None, icon: None },
+      Tag {
+        key: "wymmo".into(),
+        title: "Wymmo".into(),
+        description: vec!["description".into()],
+        color: None,
+        icon: None,
+        resize_icon: false,
+      },
     );
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     // adds a tag with a key that is use by no item
     let mut wrong_directory = directory.clone();
@@ -407,9 +423,10 @@ mod tests {
         description: vec!["description".into()],
         color: None,
         icon: None,
+        resize_icon: false,
       },
     );
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     // adds a non exising tag to an item
     let mut wrong_directory = directory.clone();
@@ -417,7 +434,7 @@ mod tests {
       .items
       .entry("wymmo".into())
       .and_modify(|x| x.tags.push("not_existing_tag".into()));
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     // adds a link to itself
     let mut wrong_directory = directory.clone();
@@ -425,7 +442,7 @@ mod tests {
       x.links
         .push(DirectoryLink { target_key: "wymmo".into(), begin_in: 2020, end_in: None, description: "description".into() })
     });
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     // adds a link to an item that does not exist
     let mut wrong_directory = directory.clone();
@@ -433,7 +450,7 @@ mod tests {
       x.links
         .push(DirectoryLink { target_key: "does_not_exists".into(), begin_in: 2020, end_in: None, description: "description".into() })
     });
-    assert!(matches!(validate_directory(&wrong_directory), Err(_)));
+    assert!(validate_directory(&wrong_directory).is_err());
 
     Ok(())
   }

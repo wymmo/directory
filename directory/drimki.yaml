@@ -16,6 +16,7 @@ description:
 
 url: https://www.drimki.fr/
 icon: drimki.png
+resize_icon: true
 backlink:
 
 links:
