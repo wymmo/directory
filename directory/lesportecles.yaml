@@ -1,6 +1,6 @@
 name: Les Porteclés
 title: Les Porteclés
-tags: ["reseau_mandataire"]
+tags: ["reseau_mandataires"]
 created_in: 2014
 description:
   - |
@@ -12,4 +12,5 @@ description:
 
 url: https://www.lesportecles.com/
 icon: lesportecles.ico
+resize_icon: true
 backlink:

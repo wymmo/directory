@@ -1,11 +1,16 @@
 name: Lesty
 title: Lesty
-tags: ["logiciel_gestion_agence", "solution_web"]
+tags: ["logiciel_immobilier", "site_internet_immobilier"]
 created_in: 2001
 description:
   - |
-    Lesty, édité par Bexter, est un logiciel immobilier de transaction 100% web. Il offre aux professionnels de l'immobilier une solution modulaire, adaptée aux mobiles et accessible sur ordinateurs, leur permettant de gérer leur portefeuille de mandats et leurs annonces. Lesty se distingue par sa flexibilité, permettant aux agences de personnaliser le logiciel en fonction de leurs besoins spécifiques. Les clients bénéficient d'un outil de transaction accessible en tout lieu, combinant efficacité et innovation pour améliorer les performances des agences immobilières. Cette solution digitale complète comprend également la création de sites internet, une stratégie e-marketing, ainsi qu'un logiciel de cession et de transaction immobilière d'entreprise.
+    Lesty, édité par Bexter, est un logiciel immobilier de transaction 100% web. 
+    Il offre aux professionnels de l'immobilier une solution modulaire, adaptée aux mobiles et accessible sur ordinateurs, leur permettant de gérer leur portefeuille de mandats et leurs annonces. 
+    Lesty se distingue par sa flexibilité, permettant aux agences de personnaliser le logiciel en fonction de leurs besoins spécifiques. 
+    Les clients bénéficient d'un outil de transaction accessible en tout lieu, combinant efficacité et innovation pour améliorer les performances des agences immobilières. 
+    Cette solution digitale complète comprend également la création de sites internet, une stratégie e-marketing, ainsi qu'un logiciel de cession et de transaction immobilière d'entreprise.
 
 url: https://www.lesty.fr/
-icon: lesty.ico
+icon: lesty.png
+resize_icon: true
 backlink:

@@ -1,16 +1,17 @@
 name: H2i
 title: H2i
-tags: ["suite_de_logiciel", "administrateur_de_bien"]
+tags: ["logiciel_immobilier", "signature_electronique"]
 created_in: 1992
 description:
   - |
-    H2i est un éditeur et intégrateur de logiciels pour les professionnels de 
-    l'immobilier. Leurs solutions simplifient les activités du syndic, de la gérance, de la comptabilité 
+    H2i est un éditeur et intégrateur de logiciels pour les professionnels de  l'immobilier. 
+    Leurs solutions simplifient les activités du syndic, de la gérance, de la comptabilité 
     et de la location/transaction. Ils offrent des solutions novatrices, adaptées aux besoins des 
-    acteurs de l'immobilier, et visent à améliorer la productivité. H2i propose également des applications 
-    mobiles et des services personnalisés. Leurs clients incluent les administrateurs de biens, les bailleurs 
-    sociaux et les syndics. L'entreprise se distingue par sa veille technologique, sa réactivité et son 
-    expertise du secteur immobilier.
+    acteurs de l'immobilier, et visent à améliorer la productivité.
+  - |
+    H2i propose également des applications mobiles et différents services de dématérialisation (factures, signatures électroniques, dossiers en lignes ...). 
+    Leurs clients incluent les administrateurs de biens, les bailleurs sociaux et les syndics. 
+    L'entreprise se distingue par sa veille technologique, sa réactivité et son expertise du secteur immobilier.
 
 url: https://www.h2i.fr/
 icon: h2i.svg

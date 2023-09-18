@@ -1,10 +1,13 @@
 name: Marketing Immobilier
 title: Marketing Immobilier
-tags: ["pige"]
+tags: ["prospection"]
 created_in: 2013
 description:
   - |
-    Marketing Immobilier est un service de prospection immobilière par SMS, spécialisé dans l'entrée de nouveaux mandats. Il propose un système efficace qui simplifie la prospection pour les professionnels de l'immobilier. Grâce à l'envoi ciblé de SMS aux propriétaires dans votre zone de chalandise, vous pouvez identifier rapidement les vendeurs potentiels. Marketing Immobilier facilite ainsi l'entrée de mandats en vous permettant de traiter uniquement les clients intéressés.
+    Marketing Immobilier est un service de prospection immobilière par SMS, spécialisé dans l'entrée de nouveaux mandats. 
+    Il propose un système efficace qui simplifie la prospection pour les professionnels de l'immobilier. 
+    Grâce à l'envoi ciblé de SMS aux propriétaires dans votre zone de chalandise, vous pouvez identifier rapidement les vendeurs potentiels. 
+    Marketing Immobilier facilite ainsi l'entrée de mandats en vous permettant de traiter uniquement les clients intéressés.
 
 url: https://www.marketing-immo.fr/
 icon: marketingimmobilier.png
