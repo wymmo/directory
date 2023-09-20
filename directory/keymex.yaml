@@ -14,3 +14,8 @@ url: https://www.keymex.fr/
 icon: keymex.png
 resize_icon: true
 backlink:
+
+links:
+  - target_key: human_immobilier
+    begin_in: 2023
+    description: Rejoint le groupe Human Immobilier
