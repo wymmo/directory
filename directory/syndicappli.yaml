@@ -7,5 +7,6 @@ description:
     SyndicAppli est une plateforme de gestion de copropriété qui simplifie la vie des gestionnaires et des résidents. Elle répond au besoin croissant de transparence et de communication des clients vis-à-vis des gestionnaires de copropriété. Grâce à SyndicAppli, les gestionnaires peuvent offrir une expérience fluide et transparente aux résidents, centralisant les informations et permettant un suivi en ligne des projets. La plateforme facilite également la gestion des assemblées générales avec des fonctionnalités de participation à distance et de vote électronique sécurisé.
 
 url: https://www.syndicappli.fr/
-icon: syndicappli.ico
+icon: syndicappli.png
+resize_icon: true
 backlink:

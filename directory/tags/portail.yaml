@@ -1,6 +1,5 @@
 title: Portails immobiliers
 tag_group: ONLINE_SERVICES
-icon: portail.png
 description:
   - |
     Les sociétés de portails immobiliers sont des entreprises spécialisées dans la mise en relation entre les 
@@ -27,3 +26,6 @@ description:
     de référencement, des partenariats avec des institutions financières, etc. Ces portails sont devenus des acteurs 
     incontournables du marché immobilier en ligne, offrant une visibilité accrue aux biens immobiliers et facilitant 
     les transactions pour les parties prenantes.
+
+icon: portail.png
+resize_icon: true

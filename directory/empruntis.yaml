@@ -11,7 +11,8 @@ description:
     Empruntis propose une expertise reconnue et un accompagnement sur mesure pour la réalisation des projets financiers.
 
 url: https://www.empruntis.com/
-icon: "empruntis.svg"
+icon: "empruntis.png"
+resize_icon: true
 backlink:
 
 links:
