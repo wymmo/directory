@@ -16,5 +16,6 @@ links:
     description: Rejoint le Groupe DL Software
 
 url: https://gercop.com/
-icon: gercop.svg
+icon: gercop.png
+resize_icon: true
 backlink:
