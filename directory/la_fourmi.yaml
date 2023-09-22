@@ -11,5 +11,6 @@ description:
     métier d'agent commercial en immobilier.
 
 url: https://www.lfimmo.fr/
-icon: lfimmo.png
+icon: la_fourmi.png
+resize_icon: true
 backlink:

@@ -35,13 +35,28 @@ pub struct Directory {
   pub items: BTreeMap<String, Item>,
 }
 
+#[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq)]
+#[allow(non_camel_case_types, clippy::upper_case_acronyms)]
+pub enum TagGroup {
+  GROUPS,
+  B2B_SAAS,
+  ONLINE_SERVICES,
+  AUDIT_SERVICES,
+  FIN_SERVICES,
+  LEGAL_SERVICES,
+  BUILDERS,
+  AGENTS,
+}
+
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq, Validate)]
+#[serde(deny_unknown_fields)]
 pub struct Tag {
+  tag_group: TagGroup,
+
   #[serde(default)]
   pub key: String,
   pub title: Cow<'static, str>,
   pub description: Vec<Cow<'static, str>>,
-  pub color: Option<Cow<'static, str>>,
 
   pub icon: Option<Cow<'static, str>>,
   #[serde(default)]
@@ -49,6 +64,7 @@ pub struct Tag {
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq, Eq, Validate)]
+#[serde(deny_unknown_fields)]
 pub struct Item {
   #[serde(default)]
   pub key: String,
@@ -373,10 +389,10 @@ mod tests {
     directory.tags.insert(
       "b2b".to_string(),
       Tag {
+        tag_group: TagGroup::ONLINE_SERVICES,
         key: "b2c".into(),
         title: "Business to consumer".into(),
         description: vec!["Le B2B,".into(), "c'est la vie".into()],
-        color: None,
         icon: None,
         resize_icon: false,
       },
@@ -403,10 +419,10 @@ mod tests {
     wrong_directory.tags.insert(
       "wymmo".into(),
       Tag {
+        tag_group: TagGroup::ONLINE_SERVICES,
         key: "wymmo".into(),
         title: "Wymmo".into(),
         description: vec!["description".into()],
-        color: None,
         icon: None,
         resize_icon: false,
       },
@@ -418,10 +434,10 @@ mod tests {
     wrong_directory.tags.insert(
       "not_used".to_string(),
       Tag {
+        tag_group: TagGroup::ONLINE_SERVICES,
         key: "not_used".into(),
         title: "This tag is not used".into(),
         description: vec!["description".into()],
-        color: None,
         icon: None,
         resize_icon: false,
       },

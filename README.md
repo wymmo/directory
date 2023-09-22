@@ -50,7 +50,7 @@ Vous êtes libres de
 - transformer, adapter, construire à partir de ce matériel pour tout but, y compris commercial.
 
 Vous avez les obligations de
-- attribuer le crédit nécessaire aux auteurs originaux du présent matériel, en mentionnant les modifications apportées
+- attribuer le crédit nécessaire aux auteurs originaux du présent matériel (Wymmo.com), en mentionnant les modifications apportées
 - le cas échéant partager aux mêmes conditions le matériel modifié
 
 [Texte de la licence CC BY-SA en français](https://creativecommons.org/licenses/by/4.0/legalcode.fr)

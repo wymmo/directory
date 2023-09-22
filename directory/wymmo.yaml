@@ -2,7 +2,6 @@ name: Wymmo
 title: Wymmo
 tags: ["portail"]
 created_in: 2021
-icon: wymmo.svg
 description:
   - |
     Wymmo.com est un portail d'informations et d'annonces immobilières. 
@@ -15,6 +14,10 @@ description:
     professionnels de l'immobilier comme particuliers à la recherche d'un bien.
 
 url: https://www.wymmo.com
+
+icon: wymmo.png
+resize_icon: true
+
 backlink: https://www.wymmo.com
 
 events:

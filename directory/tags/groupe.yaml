@@ -1,9 +1,9 @@
 title: Groupe
-color: "#bf6400"
+tag_group: GROUPS
 description:
   - |
     Les groupes sont des sociétés qui possèdent et contrôlent plusieurs entreprises, généralement à travers 
-    des filiales ou des acquisitions. Ces sociétés mères détiennent une part majoritaire ou la totalité des 
+    des filiales ou d'acquisitions. Ces sociétés mères détiennent une part majoritaire ou la totalité des 
     actions des entreprises qu'elles possèdent, leur conférant ainsi un contrôle sur leurs activités et leur stratégie.
   - |
     En acquérant d'autres entreprises, les groupes peuvent bénéficier de synergies, de partages de ressources 
