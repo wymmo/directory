@@ -16,7 +16,8 @@ description:
   - |
 
 url: https://fr.foncia.com
-icon: foncia.svg
+icon: foncia.png
+resize_icon: true
 backlink:
 
 links:

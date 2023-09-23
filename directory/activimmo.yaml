@@ -14,5 +14,6 @@ description:
     est possible sur les portails immobiliers.
 
 url: https://www.activimmo.com/
-icon: "activimmo.png"
+icon: activimmo.png
+resize_icon: true
 backlink:

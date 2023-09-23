@@ -13,5 +13,6 @@ description:
     d'un réseau de 14 agences avec plus de 100 collaborateurs pour satisfaire les besoins de sa clientèle.
 
 url: https://www.benedicsa.com/
-icon: groupe_benedic.svg
+icon: groupe_benedic.png
+resize_icon: true
 backlink:
