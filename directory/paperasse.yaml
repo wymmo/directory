@@ -1,0 +1,25 @@
+name: Paperasse
+title: Paperasse
+tags: ["signature_electronique"]
+created_in: 2020
+description:
+  - |
+    Paperas.se est le 1er service dédié aux professionnels de l’immobilier et leurs clients pour rassembler 
+    tous les documents pour signer le compromis et pour obtenir le Pré-état daté à 60€ TTC livré en moins de 24h.
+  - |
+    Paperas.se a déjà traité plus de 6 000 dossiers de vente et livré plus de 4 000 Pré-états datés. 
+    Vous verrez les retours de nos utilisateurs sur cette page d’avis vérifiés TrustPilot https://fr.trustpilot.com/review/paperas.se
+  - |
+    Paperas.se met à disposition sa technologie de récupération automatique des documents. 
+    Il s’agit d’un robot qui récupère les documents présents dans les espaces personnel syndic.
+  - |
+    Chaque document présent dans le dossier Paperas.se est analysé par la technologie Paperas.se et le système vous indiquera si vous avez tout ce qu’il faut pour signer le compromis de vente.
+  - |
+    Le service Paperas.se simplifie et accélère la signature du compromis.
+
+url: https://www.paperas.se/
+
+icon: paperasse.png
+resize_icon: false
+
+backlink:
