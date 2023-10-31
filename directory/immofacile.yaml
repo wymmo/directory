@@ -4,7 +4,7 @@ tags: ["logiciel_immobilier"]
 created_in: 2004
 description:
   - |
-    ImmoFacile est un logiciel lancé en 2004 et édité par la société AC3 dont son activité est déstinée 
+    AC3 ImmoFacile est un logiciel lancé en 2004 et édité par la société AC3 dont son activité est déstinée 
     à la création de site web immobilier, au référencement, ainsi qu'à la transaction immobilière. 
     De part sa complétude, il est aujourd'hui un outil incontournable et décrit parmi
     les meilleurs logiciels de transaction immobilière du marché en France.
@@ -13,6 +13,11 @@ description:
     permet aussi la création d'une passerelle régionale. L'offre multi-services s'étend aussi pour 
     la propsection, la mise en valeur des biens, la gestion du portefeuille client et le 
     suivi des mandats pour un pilotage d'agence axé sur la performance.
+
+links:
+  - target_key: orisha_real_estate
+    begin_in: 2023
+    description: AC3 ImmoFacile intègre Orisha.
 
 url: https://www.ac3-groupe.com/immofacile/
 icon: immofacile.png

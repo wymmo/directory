@@ -2,6 +2,7 @@ name: Groupe DL Software
 title: Groupe DL Software
 tags: ["groupe"]
 created_in: 2003
+concluded_in: 2023
 description:
   - |
     Fondé en 2003, DL Software est un spécialiste français des ERP métiers pour les entreprises. 
@@ -11,6 +12,13 @@ description:
     de 100 000 clients en France et en Europe, allant des PME aux grandes entreprises telles que 
     Système U, Intersport, BMW, Odalys, GMF, Krys et Gedimat, DL Software est considéré comme l'un des éditeurs 
     français de référence, d'après le classement TOP 250 EY.
+  - |
+    Pour ses 20 ans, le groupe DL Software est devenu Orisha.
+
+links:
+  - target_key: orisha_real_estate
+    begin_in: 2023
+    description: Pour les 20 ans du groupe DL Software devient Orisha.
 
 url: https://www.dlsoftware.fr/
 icon: groupe_dl_software.jpg
