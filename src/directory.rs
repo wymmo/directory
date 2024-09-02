@@ -31,7 +31,9 @@ pub enum DirectoryError {
 
 #[derive(Clone, Debug, Validate)]
 pub struct Directory {
+  #[allow(dead_code)]
   pub tags: BTreeMap<String, Tag>,
+  #[allow(dead_code)]
   pub items: BTreeMap<String, Item>,
 }
 
