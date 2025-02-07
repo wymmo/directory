@@ -117,7 +117,7 @@ fn is_yaml(file: &File) -> bool {
     .unwrap_or(false)
 }
 
-static RE_KEYS: once_cell::sync::Lazy<Regex> = once_cell::sync::Lazy::new(|| Regex::new(r#"^[a-z0-9_]+$"#).unwrap());
+static RE_KEYS: std::sync::LazyLock<Regex> = std::sync::LazyLock::new(|| Regex::new(r#"^[a-z0-9_]+$"#).unwrap());
 
 fn get_file_stem<'a>(file: &'a File) -> Result<&'a str, DirectoryError> {
   let file_stem = file
