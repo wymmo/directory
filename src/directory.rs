@@ -154,7 +154,7 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
       continue;
     }
     let yaml = tag_file.contents_utf8().ok_or(DirectoryError::CouldNotReadFile)?;
-    let mut tag: Tag = serde_yaml2::from_str(yaml).map_err(|e| {
+    let mut tag: Tag = serde_norway::from_str(yaml).map_err(|e| {
       let file_name = tag_file.path().to_string_lossy();
       tracing::error!("{file_name} tag deserialization error : `{e:?}`");
       DirectoryError::YamlDeserialization
@@ -178,7 +178,7 @@ pub fn load_directory() -> Result<Directory, DirectoryError> {
       continue;
     }
     let yaml = item_file.contents_utf8().ok_or(DirectoryError::CouldNotReadFile)?;
-    let mut item: Item = serde_yaml2::from_str(yaml).map_err(|e| {
+    let mut item: Item = serde_norway::from_str(yaml).map_err(|e| {
       let file_name = item_file.path().to_string_lossy();
       tracing::error!("{file_name} item deserialization error : `{e:?}`");
       DirectoryError::YamlDeserialization
