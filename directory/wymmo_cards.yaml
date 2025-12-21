@@ -1,0 +1,24 @@
+name: Wymmo Cards
+title: Wymmo Cards
+tags: ["e_reputation"]
+created_in: 2025
+description:
+  - |
+    Wymmo.cards est le service de carte de visite virtuelle réservé au monde de l'immobilier.
+    Il est lancé en 2025 pour offrir une présence en ligne professionnelle aux agents et mandataires immobiliers.
+    Il permet bien sûr aussi de créer facilement une signature d'email à vos couleurs, et facilement mise à jour.
+  - |
+    Nombreux sont les agents et mandataires qui doivent abandonner une partie de leur identité en ligne lorsqu'ils changent d'employeur ou de réseau.
+    Wymmo.cards répond à ce problème. C'est une solution gratuite à vie, qui permet très simplement d'avoir un point d'identité stable et professionnel, 
+    et de pouvoir la mettre à jour lors de leurs évènements de carrière.
+
+url: https://www.wymmo.cards
+
+icon: wymmo_cards.png
+resize_icon: true
+
+backlink: https://www.wymmo.cards
+
+events:
+  - happened_in: 2025
+    description: Wymmo lance Wymmo Cards

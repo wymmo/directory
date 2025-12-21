@@ -1,0 +1,25 @@
+name: Hop Hop Immo
+title: Hop Hop Immo
+tags: ["portail"]
+created_in: 2025
+description:
+  - |
+    Hop Hop Immo, un site immobilier dédié au neuf…
+    Avec Hop Hop Immo, découvrez une façon simple et innovante de rechercher un appartement, 
+    une maison ou un terrain à bâtir. 
+    Leur technologie de matching affinitaire vous aide à trouver en quelques clics les logements
+    qui correspondent vraiment à vos attentes : budget, localisation, confort, petits plus…
+
+  - |
+    Hop Hop Immo, c'est l'immobilier neuf pensé pour vous : clair, rapide, et adapté à vos besoins.
+
+url: https://www.hophopimmo.com/
+
+icon: hophopimmo.jpg
+resize_icon: false
+
+# backlink: TODO!
+
+events:
+  - happened_in: 2025
+    description: Création de Hop Hop Immo, nouveau portail immobilier dédié au neuf.
