@@ -12,6 +12,7 @@ url = { version = "2.3", features = ["serde"] }
 thiserror = "1.0"
 anyhow = "1.0"
 serde_yml = "0.0.12"
+serde_yaml2 = "0.1"
 include_dir = "0.7"
 regex = "1.7"
 validator = { version = "0.20", features = ["derive"] }
