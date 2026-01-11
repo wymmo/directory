@@ -23,7 +23,7 @@ mod tests {
 
   #[ignore]
   #[test]
-  fn build_data_json() -> anyhow::Result<()> {
+  fn build_data_json() -> eyre::Result<()> {
     let directory = load_directory()?;
     let directory_data =
       DirectoryGraphData { tags: directory.tags.values().cloned().collect(), items: directory.items.values().cloned().collect() };

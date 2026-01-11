@@ -207,14 +207,14 @@ mod tests {
   use std::collections::HashSet;
 
   #[test]
-  pub fn validate_current_directory_files() -> anyhow::Result<()> {
+  pub fn validate_current_directory_files() -> eyre::Result<()> {
     pretty_env_logger::try_init().ok();
     let directory = load_directory()?;
     validate_directory(&directory)
   }
 
   #[test]
-  pub fn test_check_filename_and_key() -> anyhow::Result<()> {
+  pub fn test_check_filename_and_key() -> eyre::Result<()> {
     pretty_env_logger::try_init().ok();
     assert!(matches!(check_filename_and_key(&File::new("plop", &[]), "plop"), Ok(())));
     assert!(
@@ -242,7 +242,7 @@ mod tests {
     Ok(())
   }
 
-  pub fn validate_directory(directory: &Directory) -> anyhow::Result<()> {
+  pub fn validate_directory(directory: &Directory) -> eyre::Result<()> {
     let icons_dir = DIRECTORY_FILES.get_dir(ICONS_DIR).ok_or(DirectoryError::IconsDirNotFound)?;
 
     let mut fail = false;
@@ -334,14 +334,14 @@ mod tests {
     }
 
     if fail {
-      anyhow::bail!("Directory did not validate, see logs !")
+      eyre::bail!("Directory did not validate, see logs !")
     }
 
     Ok(())
   }
 
   #[test]
-  pub fn assert_validations() -> anyhow::Result<()> {
+  pub fn assert_validations() -> eyre::Result<()> {
     let mut directory = Directory { items: Default::default(), tags: Default::default() };
     assert!(matches!(validate_directory(&directory), Ok(())));
 
